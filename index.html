@@ -21,11 +21,16 @@
       <span class="logo-text">BRICKHOUSE</span>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#team">Team</a>
-      <a href="#contact" class="nav-cta">Contact Us</a>
+      <a href="#about" data-i18n="navAbout">소개</a>
+      <a href="#services" data-i18n="navServices">서비스</a>
+      <a href="#portfolio" data-i18n="navPortfolio">포트폴리오</a>
+      <a href="#team" data-i18n="navTeam">팀</a>
+      <a href="#contact" class="nav-cta" data-i18n="navContact">문의하기</a>
+    </div>
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="ko" onclick="setLang('ko')">KR</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">CN</button>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -39,16 +44,16 @@
     <div class="brick-pattern"></div>
   </div>
   <div class="hero-content">
-    <p class="hero-tag">INDIE GAME PUBLISHING</p>
-    <h1 class="hero-title">We Build Games<br>That <span class="highlight">Last</span></h1>
-    <p class="hero-sub">Straw breaks. Wood rots. But what's built with care stands forever.<br>We're BRICKHOUSE &mdash; and we're here to build your game's happy ending.</p>
+    <p class="hero-tag" data-i18n="heroTag">인디게임 퍼블리싱</p>
+    <h1 class="hero-title" data-i18n="heroTitle">무너지지 않는<br>게임을 <span class="highlight">짓습니다</span></h1>
+    <p class="hero-sub" data-i18n="heroSub">짚은 무너지고, 나무는 썩습니다. 하지만 정성으로 쌓은 것은 영원히 남습니다.<br>BRICKHOUSE &mdash; 당신의 게임에 해피엔딩을 만들어드립니다.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Submit Your Game</a>
-      <a href="#about" class="btn btn-ghost">Our Story</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="heroBtn1">게임 제출하기</a>
+      <a href="#about" class="btn btn-ghost" data-i18n="heroBtn2">우리의 이야기</a>
     </div>
   </div>
   <div class="hero-scroll">
-    <span>Scroll</span>
+    <span data-i18n="heroScroll">스크롤</span>
     <div class="scroll-line"></div>
   </div>
 </section>
@@ -56,25 +61,25 @@
 <!-- About -->
 <section class="section" id="about">
   <div class="container">
-    <div class="section-label">OUR STORY</div>
+    <div class="section-label" data-i18n="aboutLabel">우리의 이야기</div>
     <div class="about-grid">
       <div class="about-text">
-        <h2>Three houses.<br>One lesson.</h2>
-        <p>You know the story. The first pig built with straw &mdash; quick and cheap. The second chose wood &mdash; a little better, but still fragile. The third pig took the time to lay every brick with intention. When the wolf came, only one house stood.</p>
-        <p>That's us. In an industry full of shortcuts, we chose the hard way. We don't rush launches. We don't cut corners on marketing. We don't abandon games after release day.</p>
-        <p>We build brick by brick, and we build to last. Every game we publish gets the foundation it deserves &mdash; because we believe every indie developer's story should end well.</p>
+        <h2 data-i18n="aboutTitle">세 채의 집,<br>하나의 교훈.</h2>
+        <p data-i18n="aboutP1"></p>
+        <p data-i18n="aboutP2"></p>
+        <p data-i18n="aboutP3"></p>
         <div class="about-stats">
           <div class="stat">
-            <span class="stat-num">50+</span>
-            <span class="stat-label">Games Published</span>
+            <span class="stat-num" data-i18n="stat1Num">50+</span>
+            <span class="stat-label" data-i18n="stat1Label">퍼블리싱 게임</span>
           </div>
           <div class="stat">
-            <span class="stat-num">12M+</span>
-            <span class="stat-label">Players Reached</span>
+            <span class="stat-num" data-i18n="stat2Num">12M+</span>
+            <span class="stat-label" data-i18n="stat2Label">누적 플레이어</span>
           </div>
           <div class="stat">
-            <span class="stat-num">30+</span>
-            <span class="stat-label">Countries</span>
+            <span class="stat-num" data-i18n="stat3Num">30+</span>
+            <span class="stat-label" data-i18n="stat3Label">진출 국가</span>
           </div>
         </div>
       </div>
@@ -82,18 +87,18 @@
         <div class="story-cards">
           <div class="story-card straw">
             <div class="card-icon">&#9675;</div>
-            <h3>The Straw House</h3>
-            <p>Quick launches with no plan. Games that disappear in weeks. We've seen it happen too many times.</p>
+            <h3 data-i18n="straw">짚으로 만든 집</h3>
+            <p data-i18n="strawDesc"></p>
           </div>
           <div class="story-card wood">
             <div class="card-icon">&#9651;</div>
-            <h3>The Wood House</h3>
-            <p>Better effort, but still missing the structure. Good games that never find their audience.</p>
+            <h3 data-i18n="wood">나무로 만든 집</h3>
+            <p data-i18n="woodDesc"></p>
           </div>
           <div class="story-card brick">
             <div class="card-icon">&#9632;</div>
-            <h3>The Brick House</h3>
-            <p>Built with care. Marketed with precision. Supported long after launch. This is what we do.</p>
+            <h3 data-i18n="brick">벽돌로 만든 집</h3>
+            <p data-i18n="brickDesc"></p>
           </div>
         </div>
       </div>
@@ -104,52 +109,52 @@
 <!-- Services -->
 <section class="section section-dark" id="services">
   <div class="container">
-    <div class="section-label">WHAT WE DO</div>
-    <h2 class="section-title">Brick by Brick,<br>We Build Your Success</h2>
-    <p class="section-sub">Our publishing process mirrors the three little pigs' journey &mdash; each phase stronger than the last.</p>
+    <div class="section-label" data-i18n="svcLabel">서비스</div>
+    <h2 class="section-title" data-i18n="svcTitle">벽돌 하나하나,<br>성공을 쌓아갑니다</h2>
+    <p class="section-sub" data-i18n="svcSub"></p>
     <div class="services-grid">
       <div class="service-card phase-1">
-        <div class="phase-tag">PHASE 01 / FOUNDATION</div>
-        <h3>Game Evaluation</h3>
-        <p>We assess your game's market potential, identify its unique strengths, and craft a tailored publishing strategy. No cookie-cutter approaches.</p>
-        <ul>
-          <li>Market analysis &amp; positioning</li>
-          <li>Competitive landscape review</li>
-          <li>Monetization strategy</li>
-          <li>Platform selection</li>
+        <div class="phase-tag" data-i18n="phase1Tag">1단계 / 기초</div>
+        <h3 data-i18n="phase1Title">게임 평가</h3>
+        <p data-i18n="phase1Desc"></p>
+        <ul data-i18n-list="phase1Li">
+          <li>시장 분석 및 포지셔닝</li>
+          <li>경쟁 환경 분석</li>
+          <li>수익화 전략</li>
+          <li>플랫폼 선정</li>
         </ul>
       </div>
       <div class="service-card phase-2">
-        <div class="phase-tag">PHASE 02 / STRUCTURE</div>
-        <h3>Production &amp; Marketing</h3>
-        <p>We help polish your game while building anticipation. QA, localization, community building, and press outreach &mdash; all handled.</p>
-        <ul>
-          <li>QA &amp; localization (20+ languages)</li>
-          <li>Trailer &amp; key art production</li>
-          <li>Community management</li>
-          <li>Press &amp; influencer outreach</li>
+        <div class="phase-tag" data-i18n="phase2Tag">2단계 / 구조</div>
+        <h3 data-i18n="phase2Title">프로덕션 &amp; 마케팅</h3>
+        <p data-i18n="phase2Desc"></p>
+        <ul data-i18n-list="phase2Li">
+          <li>QA &amp; 현지화 (20개 이상 언어)</li>
+          <li>트레일러 &amp; 키아트 제작</li>
+          <li>커뮤니티 관리</li>
+          <li>언론 &amp; 인플루언서 홍보</li>
         </ul>
       </div>
       <div class="service-card phase-3">
-        <div class="phase-tag">PHASE 03 / BRICKHOUSE</div>
-        <h3>Launch &amp; Beyond</h3>
-        <p>Launch day is just the beginning. We manage live ops, DLC planning, sales events, and long-term growth so your game thrives for years.</p>
-        <ul>
-          <li>Launch campaign execution</li>
-          <li>Live ops &amp; update support</li>
-          <li>Sales &amp; bundle strategy</li>
-          <li>DLC &amp; sequel planning</li>
+        <div class="phase-tag" data-i18n="phase3Tag">3단계 / 벽돌집</div>
+        <h3 data-i18n="phase3Title">출시 &amp; 그 이후</h3>
+        <p data-i18n="phase3Desc"></p>
+        <ul data-i18n-list="phase3Li">
+          <li>출시 캠페인 실행</li>
+          <li>라이브 운영 &amp; 업데이트 지원</li>
+          <li>세일 &amp; 번들 전략</li>
+          <li>DLC &amp; 후속작 기획</li>
         </ul>
       </div>
       <div class="service-card phase-full">
-        <div class="phase-tag">FULL SERVICE</div>
-        <h3>Funding &amp; Investment</h3>
-        <p>Need development funding? We offer advance payments and connect developers with investors who understand indie games.</p>
-        <ul>
-          <li>Development funding</li>
-          <li>Revenue advance</li>
-          <li>Investor introductions</li>
-          <li>Financial planning</li>
+        <div class="phase-tag" data-i18n="phase4Tag">풀 서비스</div>
+        <h3 data-i18n="phase4Title">펀딩 &amp; 투자</h3>
+        <p data-i18n="phase4Desc"></p>
+        <ul data-i18n-list="phase4Li">
+          <li>개발 자금 지원</li>
+          <li>매출 선급금</li>
+          <li>투자자 연결</li>
+          <li>재무 계획</li>
         </ul>
       </div>
     </div>
@@ -159,61 +164,61 @@
 <!-- Portfolio -->
 <section class="section" id="portfolio">
   <div class="container">
-    <div class="section-label">OUR GAMES</div>
-    <h2 class="section-title">Built to Last</h2>
-    <p class="section-sub">A selection of games we've helped bring to the world.</p>
+    <div class="section-label" data-i18n="portLabel">우리의 게임</div>
+    <h2 class="section-title" data-i18n="portTitle">오래 남을 게임들</h2>
+    <p class="section-sub" data-i18n="portSub"></p>
     <div class="portfolio-grid">
       <div class="portfolio-item large">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Action RPG</span>
-            <h3>Ironforge Chronicles</h3>
-            <p>500K+ copies sold</p>
+            <span class="portfolio-genre" data-i18n="game1Genre">액션 RPG</span>
+            <h3 data-i18n="game1Name">Ironforge Chronicles</h3>
+            <p data-i18n="game1Desc">50만 장 이상 판매</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #3498db, #2980b9);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Puzzle</span>
-            <h3>Lumina</h3>
-            <p>Award-winning puzzle experience</p>
+            <span class="portfolio-genre" data-i18n="game2Genre">퍼즐</span>
+            <h3 data-i18n="game2Name">Lumina</h3>
+            <p data-i18n="game2Desc">수상 경력의 퍼즐 게임</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Simulation</span>
-            <h3>Tiny Kingdoms</h3>
-            <p>1M+ players worldwide</p>
+            <span class="portfolio-genre" data-i18n="game3Genre">시뮬레이션</span>
+            <h3 data-i18n="game3Name">Tiny Kingdoms</h3>
+            <p data-i18n="game3Desc">전 세계 100만 플레이어</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Roguelike</span>
-            <h3>Vault of Shadows</h3>
-            <p>Steam Top Seller 2025</p>
+            <span class="portfolio-genre" data-i18n="game4Genre">로그라이크</span>
+            <h3 data-i18n="game4Name">Vault of Shadows</h3>
+            <p data-i18n="game4Desc">Steam 2025 인기 판매작</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Platformer</span>
-            <h3>Skybound</h3>
-            <p>Console &amp; PC launch</p>
+            <span class="portfolio-genre" data-i18n="game5Genre">플랫포머</span>
+            <h3 data-i18n="game5Name">Skybound</h3>
+            <p data-i18n="game5Desc">콘솔 &amp; PC 동시 출시</p>
           </div>
         </div>
       </div>
       <div class="portfolio-item large">
         <div class="portfolio-thumb" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
           <div class="portfolio-overlay">
-            <span class="portfolio-genre">Strategy</span>
-            <h3>Dominion Tactics</h3>
-            <p>Upcoming 2026</p>
+            <span class="portfolio-genre" data-i18n="game6Genre">전략</span>
+            <h3 data-i18n="game6Name">Dominion Tactics</h3>
+            <p data-i18n="game6Desc">2026년 출시 예정</p>
           </div>
         </div>
       </div>
@@ -224,33 +229,33 @@
 <!-- Team -->
 <section class="section section-dark" id="team">
   <div class="container">
-    <div class="section-label">THE BUILDERS</div>
-    <h2 class="section-title">Our Team</h2>
-    <p class="section-sub">Industry veterans who chose indie because we believe in it.</p>
+    <div class="section-label" data-i18n="teamLabel">팀 소개</div>
+    <h2 class="section-title" data-i18n="teamTitle">우리 팀</h2>
+    <p class="section-sub" data-i18n="teamSub"></p>
     <div class="team-grid">
       <div class="team-card">
         <div class="team-avatar" style="background: #e74c3c;">CEO</div>
-        <h3>Your Name</h3>
-        <p class="team-role">CEO &amp; Founder</p>
-        <p class="team-bio">15+ years in game publishing. Previously at major studios. Built BRICKHOUSE to give indie devs the partner they deserve.</p>
+        <h3 data-i18n="team1Name">대표 이름</h3>
+        <p class="team-role" data-i18n="team1Role">CEO &amp; 설립자</p>
+        <p class="team-bio" data-i18n="team1Bio"></p>
       </div>
       <div class="team-card">
         <div class="team-avatar" style="background: #3498db;">BIZ</div>
-        <h3>Team Member</h3>
-        <p class="team-role">Head of Business Development</p>
-        <p class="team-bio">Expert in deal structuring and developer relations. Connects the right games with the right opportunities.</p>
+        <h3 data-i18n="team2Name">팀원</h3>
+        <p class="team-role" data-i18n="team2Role">사업개발 총괄</p>
+        <p class="team-bio" data-i18n="team2Bio"></p>
       </div>
       <div class="team-card">
         <div class="team-avatar" style="background: #2ecc71;">MKT</div>
-        <h3>Team Member</h3>
-        <p class="team-role">Marketing Director</p>
-        <p class="team-bio">Data-driven marketer with a passion for indie games. Specializes in community building and launch campaigns.</p>
+        <h3 data-i18n="team3Name">팀원</h3>
+        <p class="team-role" data-i18n="team3Role">마케팅 디렉터</p>
+        <p class="team-bio" data-i18n="team3Bio"></p>
       </div>
       <div class="team-card">
         <div class="team-avatar" style="background: #f39c12;">DEV</div>
-        <h3>Team Member</h3>
-        <p class="team-role">Production Lead</p>
-        <p class="team-bio">Former game developer turned producer. Understands the dev side and bridges the gap between creation and market.</p>
+        <h3 data-i18n="team4Name">팀원</h3>
+        <p class="team-role" data-i18n="team4Role">프로덕션 리드</p>
+        <p class="team-bio" data-i18n="team4Bio"></p>
       </div>
     </div>
   </div>
@@ -259,36 +264,36 @@
 <!-- CTA -->
 <section class="section section-cta">
   <div class="container">
-    <h2>Ready to Build Something<br>That Lasts?</h2>
-    <p>We're always looking for the next great indie game.<br>If you've got a project that deserves a solid foundation, let's talk.</p>
-    <a href="#contact" class="btn btn-primary btn-large">Submit Your Game</a>
+    <h2 data-i18n="ctaTitle">오래 남을 무언가를<br>함께 만들 준비가 되셨나요?</h2>
+    <p data-i18n="ctaSub"></p>
+    <a href="#contact" class="btn btn-primary btn-large" data-i18n="ctaBtn">게임 제출하기</a>
   </div>
 </section>
 
 <!-- Contact -->
 <section class="section" id="contact">
   <div class="container">
-    <div class="section-label">GET IN TOUCH</div>
-    <h2 class="section-title">Let's Build Together</h2>
+    <div class="section-label" data-i18n="contactLabel">문의하기</div>
+    <h2 class="section-title" data-i18n="contactTitle">함께 만들어갑시다</h2>
     <div class="contact-grid">
       <div class="contact-info">
-        <p>Whether you're a solo developer with a prototype or a studio ready to launch, we want to hear from you.</p>
+        <p data-i18n="contactDesc"></p>
         <div class="contact-details">
           <div class="contact-item">
-            <strong>Email</strong>
+            <strong data-i18n="contactEmail">이메일</strong>
             <span>hello@brickhouse.games</span>
           </div>
           <div class="contact-item">
-            <strong>Business</strong>
+            <strong data-i18n="contactBiz">비즈니스</strong>
             <span>publishing@brickhouse.games</span>
           </div>
           <div class="contact-item">
-            <strong>Press</strong>
+            <strong data-i18n="contactPress">언론</strong>
             <span>press@brickhouse.games</span>
           </div>
           <div class="contact-item">
-            <strong>Location</strong>
-            <span>Seoul, South Korea / Global</span>
+            <strong data-i18n="contactLoc">위치</strong>
+            <span data-i18n="contactLocVal">대한민국 서울 / 글로벌</span>
           </div>
         </div>
         <div class="social-links">
@@ -301,33 +306,33 @@
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <div class="form-row">
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name" data-i18n="formName">이름</label>
             <input type="text" id="name" name="name" required>
           </div>
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email" data-i18n="formEmail">이메일</label>
             <input type="email" id="email" name="email" required>
           </div>
         </div>
         <div class="form-group">
-          <label for="company">Studio / Company</label>
+          <label for="company" data-i18n="formCompany">스튜디오 / 회사명</label>
           <input type="text" id="company" name="company">
         </div>
         <div class="form-group">
-          <label for="subject">Subject</label>
+          <label for="subject" data-i18n="formSubject">문의 유형</label>
           <select id="subject" name="subject">
-            <option value="">Select a topic</option>
-            <option value="publishing">Game Publishing Inquiry</option>
-            <option value="funding">Funding / Investment</option>
-            <option value="press">Press / Media</option>
-            <option value="other">Other</option>
+            <option value="" data-i18n="formOpt1">주제를 선택하세요</option>
+            <option value="publishing" data-i18n="formOpt2">게임 퍼블리싱 문의</option>
+            <option value="funding" data-i18n="formOpt3">펀딩 / 투자</option>
+            <option value="press" data-i18n="formOpt4">언론 / 미디어</option>
+            <option value="other" data-i18n="formOpt5">기타</option>
           </select>
         </div>
         <div class="form-group">
-          <label for="message">Tell us about your game</label>
+          <label for="message" data-i18n="formMsg">게임에 대해 알려주세요</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary" data-i18n="formBtn">메시지 보내기</button>
       </form>
     </div>
   </div>
@@ -340,22 +345,21 @@
       <div class="footer-brand">
         <span class="logo-icon">&#9608;&#9608;&#9608;</span>
         <span class="logo-text">BRICKHOUSE</span>
-        <p>Build games that last.</p>
+        <p data-i18n="footerSlogan">오래 남을 게임을 짓습니다.</p>
       </div>
       <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Games</a>
-        <a href="#contact">Contact</a>
-        <a href="#">Privacy Policy</a>
+        <a href="#about" data-i18n="navAbout">소개</a>
+        <a href="#services" data-i18n="navServices">서비스</a>
+        <a href="#portfolio" data-i18n="portLabel">우리의 게임</a>
+        <a href="#contact" data-i18n="contactLabel">문의하기</a>
+        <a href="#" data-i18n="footerPrivacy">개인정보처리방침</a>
       </div>
-      <div class="footer-copy">
-        &copy; 2026 BRICKHOUSE Games. All rights reserved.
-      </div>
+      <div class="footer-copy" data-i18n="footerCopy">&copy; 2026 BRICKHOUSE Games. All rights reserved.</div>
     </div>
   </div>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
