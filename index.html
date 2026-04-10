@@ -33,14 +33,18 @@
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <svg class="logo-svg" viewBox="0 0 52 30" width="46" height="26">
-        <!-- Bottom brick: wider, natural proportion, bottom cut off -->
-        <g transform="translate(6,17)">
-          <rect width="36" height="20" rx="1" fill="#8C2B22"/>
-          <polygon points="0,0 2,-3 38,-3 36,0" fill="#A33A2E"/>
-          <polygon points="36,0 38,-3 38,17 36,20" fill="#6E2019"/>
-          <circle cx="8" cy="5" r="2.5" fill="#4A1510" opacity="0.55"/>
-          <circle cx="18" cy="5" r="2.5" fill="#4A1510" opacity="0.55"/>
-          <circle cx="28" cy="5" r="2.5" fill="#4A1510" opacity="0.45"/>
+        <!-- Bottom brick: rotated slightly, perspective view -->
+        <g transform="translate(8,17) rotate(5,18,8)">
+          <!-- front face (narrower due to angle) -->
+          <rect width="30" height="18" rx="1" fill="#8C2B22"/>
+          <!-- top face -->
+          <polygon points="0,0 4,-4 34,-4 30,0" fill="#A33A2E"/>
+          <!-- right side face (visible due to rotation) -->
+          <polygon points="30,0 34,-4 34,14 30,18" fill="#6E2019"/>
+          <!-- holes on front, shifted right due to perspective -->
+          <circle cx="8" cy="5.5" r="2.2" fill="#4A1510" opacity="0.5"/>
+          <circle cx="16" cy="5.5" r="2.4" fill="#4A1510" opacity="0.55"/>
+          <circle cx="24" cy="5.5" r="2.5" fill="#4A1510" opacity="0.6"/>
         </g>
         <!-- Top brick: full 3D -->
         <g transform="rotate(-3,26,10)">
@@ -413,13 +417,13 @@
     <div class="footer-inner">
       <div class="footer-brand">
         <svg class="logo-svg" viewBox="0 0 52 30" width="46" height="26">
-          <g transform="translate(6,17)">
-            <rect width="36" height="20" rx="1" fill="#8C2B22"/>
-            <polygon points="0,0 2,-3 38,-3 36,0" fill="#A33A2E"/>
-            <polygon points="36,0 38,-3 38,17 36,20" fill="#6E2019"/>
-            <circle cx="8" cy="5" r="2.5" fill="#4A1510" opacity="0.55"/>
-            <circle cx="18" cy="5" r="2.5" fill="#4A1510" opacity="0.55"/>
-            <circle cx="28" cy="5" r="2.5" fill="#4A1510" opacity="0.45"/>
+          <g transform="translate(8,17) rotate(5,18,8)">
+            <rect width="30" height="18" rx="1" fill="#8C2B22"/>
+            <polygon points="0,0 4,-4 34,-4 30,0" fill="#A33A2E"/>
+            <polygon points="30,0 34,-4 34,14 30,18" fill="#6E2019"/>
+            <circle cx="8" cy="5.5" r="2.2" fill="#4A1510" opacity="0.5"/>
+            <circle cx="16" cy="5.5" r="2.4" fill="#4A1510" opacity="0.55"/>
+            <circle cx="24" cy="5.5" r="2.5" fill="#4A1510" opacity="0.6"/>
           </g>
           <g transform="rotate(-3,26,10)">
             <rect x="2" y="3" width="46" height="14" rx="1" fill="#C43A2E">
