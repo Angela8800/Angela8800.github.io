@@ -32,41 +32,47 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <svg class="logo-svg" viewBox="0 0 48 32" width="48" height="32">
-        <!-- Brick body (front face) -->
-        <rect x="2" y="12" width="40" height="18" rx="1.5" fill="#C0392B"/>
-        <rect x="2" y="12" width="40" height="18" rx="1.5" fill="url(#brickGrad)" opacity="0.3"/>
-        <!-- Front face shadow/edge -->
-        <rect x="2" y="27" width="40" height="3" rx="1" fill="#8E2B1E" opacity="0.5"/>
-        <!-- Top face (perspective) -->
-        <polygon points="2,12 8,4 48,4 42,12" fill="#D4453A"/>
-        <polygon points="2,12 8,4 48,4 42,12" fill="url(#topGrad)" opacity="0.3"/>
-        <!-- Right side face -->
-        <polygon points="42,12 48,4 48,22 42,30" fill="#A93226"/>
-        <!-- 3 holes on top face -->
-        <ellipse cx="16" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-        <ellipse cx="16" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-        <ellipse cx="25.5" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-        <ellipse cx="25.5" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-        <ellipse cx="35" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-        <ellipse cx="35" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-        <!-- Surface texture on front -->
-        <rect x="5" y="15" width="8" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
-        <rect x="18" y="17" width="6" height="2" rx="0.5" fill="#D4453A" opacity="0.2"/>
-        <rect x="30" y="14" width="7" height="2.5" rx="0.5" fill="#D4453A" opacity="0.2"/>
-        <rect x="8" y="23" width="10" height="2" rx="0.5" fill="#D4453A" opacity="0.15"/>
-        <rect x="25" y="22" width="8" height="2.5" rx="0.5" fill="#D4453A" opacity="0.15"/>
-        <!-- Gradients -->
+      <svg class="logo-svg" viewBox="0 0 52 28" width="52" height="28">
         <defs>
-          <linearGradient id="brickGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
-            <stop offset="100%" stop-color="#000" stop-opacity="0.1"/>
+          <linearGradient id="brickFront" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#C94433"/>
+            <stop offset="100%" stop-color="#9B2D1F"/>
           </linearGradient>
-          <linearGradient id="topGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#fff" stop-opacity="0.2"/>
-            <stop offset="100%" stop-color="#000" stop-opacity="0.05"/>
+          <linearGradient id="brickTop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#D95A4A"/>
+            <stop offset="100%" stop-color="#C04030"/>
           </linearGradient>
+          <filter id="brickTex">
+            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+            <feColorMatrix type="saturate" values="0" in="noise" result="gray"/>
+            <feBlend in="SourceGraphic" in2="gray" mode="multiply"/>
+          </filter>
         </defs>
+        <!-- Front face -->
+        <rect x="1" y="14" width="42" height="13" rx="1" fill="url(#brickFront)" filter="url(#brickTex)"/>
+        <!-- Bottom edge -->
+        <rect x="1" y="25" width="42" height="2" rx="0.5" fill="#7A2218" opacity="0.4"/>
+        <!-- Top face -->
+        <polygon points="1,14 9,5 51,5 43,14" fill="url(#brickTop)" filter="url(#brickTex)"/>
+        <!-- Right side -->
+        <polygon points="43,14 51,5 51,18 43,27" fill="#A03325" filter="url(#brickTex)"/>
+        <!-- Top highlight edge -->
+        <line x1="1" y1="14" x2="43" y2="14" stroke="#D4604F" stroke-width="0.5" opacity="0.5"/>
+        <!-- 3 round holes on top face -->
+        <ellipse cx="18" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+        <ellipse cx="18" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+        <ellipse cx="27.5" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+        <ellipse cx="27.5" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+        <ellipse cx="37" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+        <ellipse cx="37" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+        <!-- Speckle texture on front -->
+        <circle cx="6" cy="17" r="0.6" fill="#B8483A" opacity="0.3"/>
+        <circle cx="12" cy="20" r="0.8" fill="#D4604F" opacity="0.2"/>
+        <circle cx="20" cy="16" r="0.5" fill="#B8483A" opacity="0.25"/>
+        <circle cx="28" cy="22" r="0.7" fill="#D4604F" opacity="0.2"/>
+        <circle cx="35" cy="18" r="0.6" fill="#B8483A" opacity="0.3"/>
+        <circle cx="15" cy="24" r="0.5" fill="#D4604F" opacity="0.15"/>
+        <circle cx="32" cy="15" r="0.4" fill="#B8483A" opacity="0.2"/>
       </svg>
       <span class="logo-text">RED BRICK HOUSE</span>
     </a>
@@ -424,20 +430,38 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg class="logo-svg" viewBox="0 0 48 32" width="48" height="32">
-          <rect x="2" y="12" width="40" height="18" rx="1.5" fill="#C0392B"/>
-          <rect x="2" y="27" width="40" height="3" rx="1" fill="#8E2B1E" opacity="0.5"/>
-          <polygon points="2,12 8,4 48,4 42,12" fill="#D4453A"/>
-          <polygon points="42,12 48,4 48,22 42,30" fill="#A93226"/>
-          <ellipse cx="16" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-          <ellipse cx="16" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-          <ellipse cx="25.5" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-          <ellipse cx="25.5" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-          <ellipse cx="35" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
-          <ellipse cx="35" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
-          <rect x="5" y="15" width="8" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
-          <rect x="18" y="17" width="6" height="2" rx="0.5" fill="#D4453A" opacity="0.2"/>
-          <rect x="30" y="14" width="7" height="2.5" rx="0.5" fill="#D4453A" opacity="0.2"/>
+        <svg class="logo-svg" viewBox="0 0 52 28" width="52" height="28">
+          <defs>
+            <linearGradient id="brickFront2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#C94433"/>
+              <stop offset="100%" stop-color="#9B2D1F"/>
+            </linearGradient>
+            <linearGradient id="brickTop2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#D95A4A"/>
+              <stop offset="100%" stop-color="#C04030"/>
+            </linearGradient>
+            <filter id="brickTex2">
+              <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+              <feColorMatrix type="saturate" values="0" in="noise" result="gray"/>
+              <feBlend in="SourceGraphic" in2="gray" mode="multiply"/>
+            </filter>
+          </defs>
+          <rect x="1" y="14" width="42" height="13" rx="1" fill="url(#brickFront2)" filter="url(#brickTex2)"/>
+          <rect x="1" y="25" width="42" height="2" rx="0.5" fill="#7A2218" opacity="0.4"/>
+          <polygon points="1,14 9,5 51,5 43,14" fill="url(#brickTop2)" filter="url(#brickTex2)"/>
+          <polygon points="43,14 51,5 51,18 43,27" fill="#A03325" filter="url(#brickTex2)"/>
+          <line x1="1" y1="14" x2="43" y2="14" stroke="#D4604F" stroke-width="0.5" opacity="0.5"/>
+          <ellipse cx="18" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+          <ellipse cx="18" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+          <ellipse cx="27.5" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+          <ellipse cx="27.5" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+          <ellipse cx="37" cy="9.8" rx="3.5" ry="2.4" fill="#6B1E14"/>
+          <ellipse cx="37" cy="9.3" rx="3.5" ry="2.4" fill="#581812" opacity="0.6"/>
+          <circle cx="6" cy="17" r="0.6" fill="#B8483A" opacity="0.3"/>
+          <circle cx="12" cy="20" r="0.8" fill="#D4604F" opacity="0.2"/>
+          <circle cx="20" cy="16" r="0.5" fill="#B8483A" opacity="0.25"/>
+          <circle cx="28" cy="22" r="0.7" fill="#D4604F" opacity="0.2"/>
+          <circle cx="35" cy="18" r="0.6" fill="#B8483A" opacity="0.3"/>
         </svg>
         <span class="logo-text">RED BRICK HOUSE</span>
         <p data-i18n="footerSlogan">오래 남을 게임을 짓습니다.</p>
