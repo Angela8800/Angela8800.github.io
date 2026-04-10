@@ -299,10 +299,11 @@ img { max-width: 100%; display: block; }
   .nav-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
   .nav-toggle.active span:nth-child(2) { opacity: 0; }
   .nav-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-  .lang-switch { order: 2; margin-left: auto; margin-right: 12px; }
-  .lang-btn { padding: 6px 10px; font-size: 11px; }
-  .nav-logo { font-size: 16px; }
-  .logo-icon { font-size: 10px; }
+  .lang-switch { order: 2; margin-left: auto; margin-right: 8px; gap: 2px; }
+  .lang-btn { padding: 5px 8px; font-size: 11px; min-width: 30px; }
+  .nav-logo { font-size: 13px; gap: 6px; letter-spacing: 0.5px; max-width: 50%; }
+  .nav-logo .logo-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .logo-svg { width: 30px; height: 20px; flex-shrink: 0; }
 
   /* Hero mobile */
   .hero { min-height: 100svh; }
@@ -380,6 +381,9 @@ img { max-width: 100%; display: block; }
   .section-title { font-size: 24px; }
   .about-stats { flex-direction: column; gap: 16px; }
   .team-grid { grid-template-columns: 1fr; }
+  .nav-logo { font-size: 12px; gap: 5px; letter-spacing: 0.5px; }
+  .logo-svg { width: 28px; height: 18px; }
+  .lang-btn { padding: 4px 7px; font-size: 10px; }
 }
 
 /* Touch-friendly: ensure tap targets are at least 44px */
