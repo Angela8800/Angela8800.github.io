@@ -7,7 +7,7 @@ const translations = {
     navContact: "Contact Us",
     heroTag: "INDIE GAME PUBLISHING",
     heroTitle: 'We Build Games<br>That <span class="highlight">Last</span>',
-    heroSub: "Straw breaks. Wood rots. But what's built with care stands forever.<br>We're BRICKHOUSE &mdash; and we're here to build your game's happy ending.",
+    heroSub: "Straw breaks. Wood rots. But what's built with care stands forever.<br>We're RED BRICK HOUSE &mdash; and we're here to build your game's happy ending.",
     heroBtn1: "Submit Your Game",
     heroBtn2: "Our Story",
     heroScroll: "Scroll",
@@ -31,7 +31,7 @@ const translations = {
     phase2Tag: "PHASE 02 / STRUCTURE", phase2Title: "Production & Marketing",
     phase2Desc: "We help polish your game while building anticipation. QA, localization, community building, and press outreach &mdash; all handled.",
     phase2Li: ["QA & localization (20+ languages)", "Trailer & key art production", "Community management", "Press & influencer outreach"],
-    phase3Tag: "PHASE 03 / BRICKHOUSE", phase3Title: "Launch & Beyond",
+    phase3Tag: "PHASE 03 / RED BRICK HOUSE", phase3Title: "Launch & Beyond",
     phase3Desc: "Launch day is just the beginning. We manage live ops, DLC planning, sales events, and long-term growth so your game thrives for years.",
     phase3Li: ["Launch campaign execution", "Live ops & update support", "Sales & bundle strategy", "DLC & sequel planning"],
     phase4Tag: "FULL SERVICE", phase4Title: "Funding & Investment",
@@ -45,7 +45,7 @@ const translations = {
     game5Genre: "Platformer", game5Name: "Skybound", game5Desc: "Console & PC launch",
     game6Genre: "Strategy", game6Name: "Dominion Tactics", game6Desc: "Upcoming 2026",
     teamLabel: "THE BUILDERS", teamTitle: "Our Team", teamSub: "Industry veterans who chose indie because we believe in it.",
-    team1Name: "Your Name", team1Role: "CEO & Founder", team1Bio: "15+ years in game publishing. Previously at major studios. Built BRICKHOUSE to give indie devs the partner they deserve.",
+    team1Name: "Your Name", team1Role: "CEO & Founder", team1Bio: "15+ years in game publishing. Previously at major studios. Built RED BRICK HOUSE to give indie devs the partner they deserve.",
     team2Name: "Team Member", team2Role: "Head of Business Development", team2Bio: "Expert in deal structuring and developer relations. Connects the right games with the right opportunities.",
     team3Name: "Team Member", team3Role: "Marketing Director", team3Bio: "Data-driven marketer with a passion for indie games. Specializes in community building and launch campaigns.",
     team4Name: "Team Member", team4Role: "Production Lead", team4Bio: "Former game developer turned producer. Understands the dev side and bridges the gap between creation and market.",
@@ -60,7 +60,7 @@ const translations = {
     formMsg: "Tell us about your game", formBtn: "Send Message",
     footerSlogan: "Build games that last.",
     footerPrivacy: "Privacy Policy",
-    footerCopy: "&copy; 2026 BRICKHOUSE Games. All rights reserved."
+    footerCopy: "&copy; 2026 RED BRICK HOUSE Games. All rights reserved."
   },
   ko: {
     navAbout: "소개",
@@ -70,7 +70,7 @@ const translations = {
     navContact: "문의하기",
     heroTag: "인디게임 퍼블리싱",
     heroTitle: '무너지지 않는<br>게임을 <span class="highlight">짓습니다</span>',
-    heroSub: "짚은 무너지고, 나무는 썩습니다. 하지만 정성으로 쌓은 것은 영원히 남습니다.<br>BRICKHOUSE &mdash; 당신의 게임에 해피엔딩을 만들어드립니다.",
+    heroSub: "짚은 무너지고, 나무는 썩습니다. 하지만 정성으로 쌓은 것은 영원히 남습니다.<br>RED BRICK HOUSE &mdash; 당신의 게임에 해피엔딩을 만들어드립니다.",
     heroBtn1: "게임 제출하기",
     heroBtn2: "우리의 이야기",
     heroScroll: "스크롤",
@@ -108,7 +108,7 @@ const translations = {
     game5Genre: "플랫포머", game5Name: "Skybound", game5Desc: "콘솔 & PC 동시 출시",
     game6Genre: "전략", game6Name: "Dominion Tactics", game6Desc: "2026년 출시 예정",
     teamLabel: "팀 소개", teamTitle: "우리 팀", teamSub: "인디를 믿기에 인디를 선택한 업계 베테랑들.",
-    team1Name: "대표 이름", team1Role: "CEO & 설립자", team1Bio: "게임 퍼블리싱 15년 이상 경력. 대형 스튜디오 출신. 인디 개발자에게 진정한 파트너가 되기 위해 BRICKHOUSE를 설립.",
+    team1Name: "대표 이름", team1Role: "CEO & 설립자", team1Bio: "게임 퍼블리싱 15년 이상 경력. 대형 스튜디오 출신. 인디 개발자에게 진정한 파트너가 되기 위해 RED BRICK HOUSE를 설립.",
     team2Name: "팀원", team2Role: "사업개발 총괄", team2Bio: "딜 구조화와 개발사 관계 전문가. 적합한 게임과 적합한 기회를 연결합니다.",
     team3Name: "팀원", team3Role: "마케팅 디렉터", team3Bio: "데이터 기반 마케터이자 인디게임 애호가. 커뮤니티 구축과 출시 캠페인 전문.",
     team4Name: "팀원", team4Role: "프로덕션 리드", team4Bio: "게임 개발자 출신 프로듀서. 개발 현장을 이해하고 창작과 시장 사이를 잇습니다.",
@@ -123,7 +123,7 @@ const translations = {
     formMsg: "게임에 대해 알려주세요", formBtn: "메시지 보내기",
     footerSlogan: "오래 남을 게임을 짓습니다.",
     footerPrivacy: "개인정보처리방침",
-    footerCopy: "&copy; 2026 BRICKHOUSE Games. All rights reserved."
+    footerCopy: "&copy; 2026 RED BRICK HOUSE Games. All rights reserved."
   },
   zh: {
     navAbout: "关于我们",
@@ -133,7 +133,7 @@ const translations = {
     navContact: "联系我们",
     heroTag: "独立游戏发行",
     heroTitle: '我们建造<br><span class="highlight">经久不衰</span>的游戏',
-    heroSub: "稻草会散，木头会朽。但用心建造的东西将永远屹立。<br>我们是 BRICKHOUSE &mdash; 为您的游戏打造圆满结局。",
+    heroSub: "稻草会散，木头会朽。但用心建造的东西将永远屹立。<br>我们是 RED BRICK HOUSE &mdash; 为您的游戏打造圆满结局。",
     heroBtn1: "提交您的游戏",
     heroBtn2: "我们的故事",
     heroScroll: "滚动",
@@ -171,7 +171,7 @@ const translations = {
     game5Genre: "平台跳跃", game5Name: "Skybound", game5Desc: "主机与PC同步上线",
     game6Genre: "策略", game6Name: "Dominion Tactics", game6Desc: "2026年即将上线",
     teamLabel: "团队介绍", teamTitle: "我们的团队", teamSub: "因为相信独立游戏而选择独立游戏的行业老兵。",
-    team1Name: "您的姓名", team1Role: "CEO兼创始人", team1Bio: "15年以上游戏发行经验。曾就职于大型工作室。创立BRICKHOUSE，为独立开发者提供真正的合作伙伴。",
+    team1Name: "您的姓名", team1Role: "CEO兼创始人", team1Bio: "15年以上游戏发行经验。曾就职于大型工作室。创立RED BRICK HOUSE，为独立开发者提供真正的合作伙伴。",
     team2Name: "团队成员", team2Role: "商务拓展负责人", team2Bio: "交易架构与开发者关系专家。将合适的游戏与合适的机会相连接。",
     team3Name: "团队成员", team3Role: "市场总监", team3Bio: "数据驱动的营销人，热爱独立游戏。专注社区建设与上线活动。",
     team4Name: "团队成员", team4Role: "制作主管", team4Bio: "游戏开发者转型制作人。理解开发端，架起创作与市场之间的桥梁。",
@@ -186,7 +186,7 @@ const translations = {
     formMsg: "请介绍您的游戏", formBtn: "发送消息",
     footerSlogan: "建造经久不衰的游戏。",
     footerPrivacy: "隐私政策",
-    footerCopy: "&copy; 2026 BRICKHOUSE Games. All rights reserved."
+    footerCopy: "&copy; 2026 RED BRICK HOUSE Games. All rights reserved."
   }
 };
 
