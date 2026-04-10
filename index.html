@@ -41,7 +41,8 @@
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="hero-bg">
-    <div class="brick-pattern"></div>
+    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1920&q=80" alt="" class="hero-bg-img">
+    <div class="hero-overlay"></div>
   </div>
   <div class="hero-content">
     <p class="hero-tag" data-i18n="heroTag">인디게임 퍼블리싱</p>
@@ -86,19 +87,31 @@
       <div class="about-visual">
         <div class="story-cards">
           <div class="story-card straw">
-            <div class="card-icon">&#9675;</div>
-            <h3 data-i18n="straw">짚으로 만든 집</h3>
-            <p data-i18n="strawDesc"></p>
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1499578124509-1f12a8c93a49?w=400&q=80" alt="Straw" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="straw">짚으로 만든 집</h3>
+              <p data-i18n="strawDesc"></p>
+            </div>
           </div>
           <div class="story-card wood">
-            <div class="card-icon">&#9651;</div>
-            <h3 data-i18n="wood">나무로 만든 집</h3>
-            <p data-i18n="woodDesc"></p>
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?w=400&q=80" alt="Wood" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="wood">나무로 만든 집</h3>
+              <p data-i18n="woodDesc"></p>
+            </div>
           </div>
           <div class="story-card brick">
-            <div class="card-icon">&#9632;</div>
-            <h3 data-i18n="brick">벽돌로 만든 집</h3>
-            <p data-i18n="brickDesc"></p>
+            <div class="card-img-wrap">
+              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80" alt="Brick" class="card-img">
+            </div>
+            <div class="card-body">
+              <h3 data-i18n="brick">벽돌로 만든 집</h3>
+              <p data-i18n="brickDesc"></p>
+            </div>
           </div>
         </div>
       </div>
@@ -108,12 +121,19 @@
 
 <!-- Services -->
 <section class="section section-dark" id="services">
-  <div class="container">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80" alt="" class="section-bg-img">
+    <div class="section-overlay"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:2;">
     <div class="section-label" data-i18n="svcLabel">서비스</div>
     <h2 class="section-title" data-i18n="svcTitle">벽돌 하나하나,<br>성공을 쌓아갑니다</h2>
     <p class="section-sub" data-i18n="svcSub"></p>
     <div class="services-grid">
       <div class="service-card phase-1">
+        <div class="service-icon">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80" alt="" class="svc-img">
+        </div>
         <div class="phase-tag" data-i18n="phase1Tag">1단계 / 기초</div>
         <h3 data-i18n="phase1Title">게임 평가</h3>
         <p data-i18n="phase1Desc"></p>
@@ -125,6 +145,9 @@
         </ul>
       </div>
       <div class="service-card phase-2">
+        <div class="service-icon">
+          <img src="https://images.unsplash.com/photo-1536104968055-4d61aa56f46a?w=600&q=80" alt="" class="svc-img">
+        </div>
         <div class="phase-tag" data-i18n="phase2Tag">2단계 / 구조</div>
         <h3 data-i18n="phase2Title">프로덕션 &amp; 마케팅</h3>
         <p data-i18n="phase2Desc"></p>
@@ -136,6 +159,9 @@
         </ul>
       </div>
       <div class="service-card phase-3">
+        <div class="service-icon">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&q=80" alt="" class="svc-img">
+        </div>
         <div class="phase-tag" data-i18n="phase3Tag">3단계 / 벽돌집</div>
         <h3 data-i18n="phase3Title">출시 &amp; 그 이후</h3>
         <p data-i18n="phase3Desc"></p>
@@ -147,6 +173,9 @@
         </ul>
       </div>
       <div class="service-card phase-full">
+        <div class="service-icon">
+          <img src="https://images.unsplash.com/photo-1553729459-uj4872c4e5ff?w=600&q=80" alt="" class="svc-img">
+        </div>
         <div class="phase-tag" data-i18n="phase4Tag">풀 서비스</div>
         <h3 data-i18n="phase4Title">펀딩 &amp; 투자</h3>
         <p data-i18n="phase4Desc"></p>
@@ -169,7 +198,8 @@
     <p class="section-sub" data-i18n="portSub"></p>
     <div class="portfolio-grid">
       <div class="portfolio-item large">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900&q=80" alt="Ironforge Chronicles" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game1Genre">액션 RPG</span>
             <h3 data-i18n="game1Name">Ironforge Chronicles</h3>
@@ -178,7 +208,8 @@
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80" alt="Lumina" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game2Genre">퍼즐</span>
             <h3 data-i18n="game2Name">Lumina</h3>
@@ -187,7 +218,8 @@
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&q=80" alt="Tiny Kingdoms" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game3Genre">시뮬레이션</span>
             <h3 data-i18n="game3Name">Tiny Kingdoms</h3>
@@ -196,7 +228,8 @@
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=600&q=80" alt="Vault of Shadows" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game4Genre">로그라이크</span>
             <h3 data-i18n="game4Name">Vault of Shadows</h3>
@@ -205,7 +238,8 @@
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #f39c12, #e67e22);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b2b28?w=600&q=80" alt="Skybound" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game5Genre">플랫포머</span>
             <h3 data-i18n="game5Name">Skybound</h3>
@@ -214,7 +248,8 @@
         </div>
       </div>
       <div class="portfolio-item large">
-        <div class="portfolio-thumb" style="background: linear-gradient(135deg, #1abc9c, #16a085);">
+        <div class="portfolio-thumb">
+          <img src="https://images.unsplash.com/photo-1511882150382-421056c89033?w=900&q=80" alt="Dominion Tactics" class="port-img">
           <div class="portfolio-overlay">
             <span class="portfolio-genre" data-i18n="game6Genre">전략</span>
             <h3 data-i18n="game6Name">Dominion Tactics</h3>
@@ -234,25 +269,33 @@
     <p class="section-sub" data-i18n="teamSub"></p>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-avatar" style="background: #e74c3c;">CEO</div>
+        <div class="team-avatar-img">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80" alt="CEO">
+        </div>
         <h3 data-i18n="team1Name">대표 이름</h3>
         <p class="team-role" data-i18n="team1Role">CEO &amp; 설립자</p>
         <p class="team-bio" data-i18n="team1Bio"></p>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background: #3498db;">BIZ</div>
+        <div class="team-avatar-img">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80" alt="BIZ">
+        </div>
         <h3 data-i18n="team2Name">팀원</h3>
         <p class="team-role" data-i18n="team2Role">사업개발 총괄</p>
         <p class="team-bio" data-i18n="team2Bio"></p>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background: #2ecc71;">MKT</div>
+        <div class="team-avatar-img">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&q=80" alt="MKT">
+        </div>
         <h3 data-i18n="team3Name">팀원</h3>
         <p class="team-role" data-i18n="team3Role">마케팅 디렉터</p>
         <p class="team-bio" data-i18n="team3Bio"></p>
       </div>
       <div class="team-card">
-        <div class="team-avatar" style="background: #f39c12;">DEV</div>
+        <div class="team-avatar-img">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80" alt="DEV">
+        </div>
         <h3 data-i18n="team4Name">팀원</h3>
         <p class="team-role" data-i18n="team4Role">프로덕션 리드</p>
         <p class="team-bio" data-i18n="team4Bio"></p>
@@ -263,7 +306,11 @@
 
 <!-- CTA -->
 <section class="section section-cta">
-  <div class="container">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1920&q=80" alt="" class="section-bg-img">
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:2;">
     <h2 data-i18n="ctaTitle">오래 남을 무언가를<br>함께 만들 준비가 되셨나요?</h2>
     <p data-i18n="ctaSub"></p>
     <a href="#contact" class="btn btn-primary btn-large" data-i18n="ctaBtn">게임 제출하기</a>
