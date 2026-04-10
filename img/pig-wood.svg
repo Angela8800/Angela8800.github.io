@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Sky -->
+  <rect width="400" height="400" fill="#E8F5E9"/>
+  <!-- Ground -->
+  <ellipse cx="200" cy="360" rx="180" ry="30" fill="#81C784"/>
+  <!-- Wood House -->
+  <rect x="115" y="175" width="170" height="145" rx="2" fill="#A1887F" stroke="#795548" stroke-width="2"/>
+  <!-- Wood plank lines -->
+  <line x1="115" y1="200" x2="285" y2="200" stroke="#795548" stroke-width="1.5"/>
+  <line x1="115" y1="225" x2="285" y2="225" stroke="#795548" stroke-width="1.5"/>
+  <line x1="115" y1="250" x2="285" y2="250" stroke="#795548" stroke-width="1.5"/>
+  <line x1="115" y1="275" x2="285" y2="275" stroke="#795548" stroke-width="1.5"/>
+  <line x1="115" y1="300" x2="285" y2="300" stroke="#795548" stroke-width="1.5"/>
+  <!-- Roof -->
+  <polygon points="95,180 200,100 305,180" fill="#6D4C41" stroke="#4E342E" stroke-width="2"/>
+  <polygon points="95,180 200,108 305,180" fill="none" stroke="#8D6E63" stroke-width="1"/>
+  <!-- Door -->
+  <rect x="172" y="255" width="56" height="65" rx="4" fill="#5D4037" stroke="#4E342E" stroke-width="2"/>
+  <circle cx="218" cy="290" r="4" fill="#FFD54F"/>
+  <!-- Windows -->
+  <rect x="128" y="205" width="35" height="35" rx="2" fill="#B3E5FC" stroke="#795548" stroke-width="2"/>
+  <line x1="145.5" y1="205" x2="145.5" y2="240" stroke="#795548" stroke-width="1.5"/>
+  <line x1="128" y1="222.5" x2="163" y2="222.5" stroke="#795548" stroke-width="1.5"/>
+  <rect x="237" y="205" width="35" height="35" rx="2" fill="#B3E5FC" stroke="#795548" stroke-width="2"/>
+  <line x1="254.5" y1="205" x2="254.5" y2="240" stroke="#795548" stroke-width="1.5"/>
+  <line x1="237" y1="222.5" x2="272" y2="222.5" stroke="#795548" stroke-width="1.5"/>
+  <!-- Pig 2 - building -->
+  <g transform="translate(305, 240)">
+    <!-- Body -->
+    <ellipse cx="30" cy="50" rx="25" ry="22" fill="#FFB6C1"/>
+    <!-- Overalls -->
+    <rect x="12" y="38" width="36" height="30" rx="4" fill="#64B5F6"/>
+    <rect x="18" y="34" width="6" height="12" rx="2" fill="#64B5F6"/>
+    <rect x="36" y="34" width="6" height="12" rx="2" fill="#64B5F6"/>
+    <!-- Head -->
+    <circle cx="30" cy="25" r="20" fill="#FFB6C1"/>
+    <!-- Hard hat -->
+    <ellipse cx="30" cy="12" rx="22" ry="8" fill="#FDD835"/>
+    <rect x="12" y="8" width="36" height="8" rx="2" fill="#FDD835"/>
+    <!-- Eyes -->
+    <circle cx="22" cy="22" r="3" fill="#333"/>
+    <circle cx="38" cy="22" r="3" fill="#333"/>
+    <circle cx="23" cy="21" r="1" fill="#fff"/>
+    <circle cx="39" cy="21" r="1" fill="#fff"/>
+    <!-- Snout -->
+    <ellipse cx="30" cy="32" rx="10" ry="7" fill="#FF9CAD"/>
+    <circle cx="26" cy="32" r="2" fill="#E87D93"/>
+    <circle cx="34" cy="32" r="2" fill="#E87D93"/>
+    <!-- Determined smile -->
+    <path d="M24,37 Q30,41 36,37" fill="none" stroke="#E87D93" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Hammer -->
+    <line x1="0" y1="45" x2="-15" y2="25" stroke="#795548" stroke-width="4" stroke-linecap="round"/>
+    <rect x="-25" y="18" width="16" height="12" rx="2" fill="#78909C"/>
+    <!-- Legs -->
+    <rect x="15" y="65" width="10" height="15" rx="5" fill="#FFB6C1"/>
+    <rect x="35" y="65" width="10" height="15" rx="5" fill="#FFB6C1"/>
+  </g>
+  <!-- Tree -->
+  <rect x="40" y="260" width="12" height="60" rx="3" fill="#795548"/>
+  <circle cx="46" cy="240" r="30" fill="#66BB6A"/>
+  <circle cx="30" cy="255" r="20" fill="#4CAF50"/>
+  <circle cx="62" cy="250" r="22" fill="#4CAF50"/>
+</svg>

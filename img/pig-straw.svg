@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Sky -->
+  <rect width="400" height="400" fill="#FFF3E0"/>
+  <!-- Ground -->
+  <ellipse cx="200" cy="360" rx="180" ry="30" fill="#A5D6A7"/>
+  <!-- Straw House -->
+  <rect x="120" y="180" width="160" height="140" rx="4" fill="#F9E4B7" stroke="#D4A843" stroke-width="2"/>
+  <!-- Straw texture lines -->
+  <line x1="130" y1="200" x2="270" y2="200" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <line x1="130" y1="220" x2="270" y2="220" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <line x1="130" y1="240" x2="270" y2="240" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <line x1="130" y1="260" x2="270" y2="260" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <line x1="130" y1="280" x2="270" y2="280" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <line x1="130" y1="300" x2="270" y2="300" stroke="#D4A843" stroke-width="1" opacity="0.5"/>
+  <!-- Roof -->
+  <polygon points="100,185 200,110 300,185" fill="#E8C96A" stroke="#D4A843" stroke-width="2"/>
+  <!-- Door -->
+  <rect x="175" y="260" width="50" height="60" rx="25" fill="#C8A24E"/>
+  <circle cx="215" cy="292" r="4" fill="#8B6914"/>
+  <!-- Window -->
+  <rect x="140" y="210" width="30" height="30" rx="2" fill="#87CEEB" stroke="#D4A843" stroke-width="2"/>
+  <line x1="155" y1="210" x2="155" y2="240" stroke="#D4A843" stroke-width="1.5"/>
+  <line x1="140" y1="225" x2="170" y2="225" stroke="#D4A843" stroke-width="1.5"/>
+  <!-- Pig 1 - waving -->
+  <g transform="translate(60, 260)">
+    <!-- Body -->
+    <ellipse cx="30" cy="50" rx="25" ry="22" fill="#FFB6C1"/>
+    <!-- Head -->
+    <circle cx="30" cy="25" r="20" fill="#FFB6C1"/>
+    <!-- Ears -->
+    <ellipse cx="16" cy="10" rx="8" ry="10" fill="#FFB6C1" stroke="#FF9CAD" stroke-width="1"/>
+    <ellipse cx="44" cy="10" rx="8" ry="10" fill="#FFB6C1" stroke="#FF9CAD" stroke-width="1"/>
+    <!-- Eyes -->
+    <circle cx="22" cy="22" r="3" fill="#333"/>
+    <circle cx="38" cy="22" r="3" fill="#333"/>
+    <circle cx="23" cy="21" r="1" fill="#fff"/>
+    <circle cx="39" cy="21" r="1" fill="#fff"/>
+    <!-- Snout -->
+    <ellipse cx="30" cy="32" rx="10" ry="7" fill="#FF9CAD"/>
+    <circle cx="26" cy="32" r="2" fill="#E87D93"/>
+    <circle cx="34" cy="32" r="2" fill="#E87D93"/>
+    <!-- Smile -->
+    <path d="M22,37 Q30,43 38,37" fill="none" stroke="#E87D93" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Waving arm -->
+    <path d="M55,42 Q65,25 58,15" fill="none" stroke="#FFB6C1" stroke-width="8" stroke-linecap="round"/>
+    <!-- Legs -->
+    <rect x="15" y="68" width="10" height="15" rx="5" fill="#FFB6C1"/>
+    <rect x="35" y="68" width="10" height="15" rx="5" fill="#FFB6C1"/>
+  </g>
+  <!-- Straw pieces flying -->
+  <line x1="290" y1="150" x2="310" y2="145" stroke="#D4A843" stroke-width="2" opacity="0.6"/>
+  <line x1="300" y1="170" x2="325" y2="162" stroke="#D4A843" stroke-width="2" opacity="0.4"/>
+  <line x1="85" y1="140" x2="70" y2="135" stroke="#D4A843" stroke-width="2" opacity="0.5"/>
+</svg>
