@@ -32,34 +32,41 @@
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
-      <svg class="logo-svg" viewBox="0 0 44 28" width="44" height="28">
-        <!-- Brick 1 (back, offset) -->
-        <g transform="translate(16, 0)">
-          <rect x="0" y="0" width="26" height="13" rx="1.5" fill="#A93226"/>
-          <rect x="1" y="1" width="24" height="11" rx="1" fill="#C0392B"/>
-          <line x1="1" y1="6.5" x2="25" y2="6.5" stroke="#A93226" stroke-width="0.4" opacity="0.3"/>
-          <rect x="2" y="2" width="6" height="3" rx="0.5" fill="#D4453A" opacity="0.4"/>
-        </g>
-        <!-- Brick 2 (front, main) -->
-        <g transform="translate(0, 8)">
-          <rect x="0" y="0" width="30" height="16" rx="2" fill="#8E2B1E"/>
-          <rect x="1" y="1" width="28" height="14" rx="1.5" fill="#C0392B"/>
-          <!-- Surface texture -->
-          <rect x="2" y="2" width="8" height="4" rx="0.5" fill="#D4453A" opacity="0.35"/>
-          <rect x="14" y="3" width="5" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
-          <rect x="22" y="2" width="5" height="2" rx="0.5" fill="#D4453A" opacity="0.3"/>
-          <rect x="4" y="9" width="6" height="3" rx="0.5" fill="#D4453A" opacity="0.2"/>
-          <rect x="18" y="10" width="7" height="2" rx="0.5" fill="#D4453A" opacity="0.25"/>
-          <!-- Mortar line (center groove) -->
-          <line x1="1" y1="8" x2="29" y2="8" stroke="#A93226" stroke-width="0.5" opacity="0.3"/>
-          <!-- Subtle speckles -->
-          <circle cx="8" cy="5" r="0.5" fill="#B5352A" opacity="0.5"/>
-          <circle cx="20" cy="7" r="0.4" fill="#B5352A" opacity="0.4"/>
-          <circle cx="12" cy="12" r="0.5" fill="#B5352A" opacity="0.3"/>
-          <circle cx="25" cy="4" r="0.4" fill="#B5352A" opacity="0.4"/>
-          <!-- Top highlight -->
-          <line x1="3" y1="1.5" x2="20" y2="1.5" stroke="#E8675B" stroke-width="0.6" opacity="0.3" stroke-linecap="round"/>
-        </g>
+      <svg class="logo-svg" viewBox="0 0 48 32" width="48" height="32">
+        <!-- Brick body (front face) -->
+        <rect x="2" y="12" width="40" height="18" rx="1.5" fill="#C0392B"/>
+        <rect x="2" y="12" width="40" height="18" rx="1.5" fill="url(#brickGrad)" opacity="0.3"/>
+        <!-- Front face shadow/edge -->
+        <rect x="2" y="27" width="40" height="3" rx="1" fill="#8E2B1E" opacity="0.5"/>
+        <!-- Top face (perspective) -->
+        <polygon points="2,12 8,4 48,4 42,12" fill="#D4453A"/>
+        <polygon points="2,12 8,4 48,4 42,12" fill="url(#topGrad)" opacity="0.3"/>
+        <!-- Right side face -->
+        <polygon points="42,12 48,4 48,22 42,30" fill="#A93226"/>
+        <!-- 3 holes on top face -->
+        <ellipse cx="16" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+        <ellipse cx="16" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+        <ellipse cx="25.5" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+        <ellipse cx="25.5" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+        <ellipse cx="35" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+        <ellipse cx="35" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+        <!-- Surface texture on front -->
+        <rect x="5" y="15" width="8" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
+        <rect x="18" y="17" width="6" height="2" rx="0.5" fill="#D4453A" opacity="0.2"/>
+        <rect x="30" y="14" width="7" height="2.5" rx="0.5" fill="#D4453A" opacity="0.2"/>
+        <rect x="8" y="23" width="10" height="2" rx="0.5" fill="#D4453A" opacity="0.15"/>
+        <rect x="25" y="22" width="8" height="2.5" rx="0.5" fill="#D4453A" opacity="0.15"/>
+        <!-- Gradients -->
+        <defs>
+          <linearGradient id="brickGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#000" stop-opacity="0.1"/>
+          </linearGradient>
+          <linearGradient id="topGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#000" stop-opacity="0.05"/>
+          </linearGradient>
+        </defs>
       </svg>
       <span class="logo-text">RED BRICK HOUSE</span>
     </a>
@@ -417,28 +424,20 @@
   <div class="container">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg class="logo-svg" viewBox="0 0 44 28" width="44" height="28">
-          <g transform="translate(16, 0)">
-            <rect x="0" y="0" width="26" height="13" rx="1.5" fill="#A93226"/>
-            <rect x="1" y="1" width="24" height="11" rx="1" fill="#C0392B"/>
-            <line x1="1" y1="6.5" x2="25" y2="6.5" stroke="#A93226" stroke-width="0.4" opacity="0.3"/>
-            <rect x="2" y="2" width="6" height="3" rx="0.5" fill="#D4453A" opacity="0.4"/>
-          </g>
-          <g transform="translate(0, 8)">
-            <rect x="0" y="0" width="30" height="16" rx="2" fill="#8E2B1E"/>
-            <rect x="1" y="1" width="28" height="14" rx="1.5" fill="#C0392B"/>
-            <rect x="2" y="2" width="8" height="4" rx="0.5" fill="#D4453A" opacity="0.35"/>
-            <rect x="14" y="3" width="5" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
-            <rect x="22" y="2" width="5" height="2" rx="0.5" fill="#D4453A" opacity="0.3"/>
-            <rect x="4" y="9" width="6" height="3" rx="0.5" fill="#D4453A" opacity="0.2"/>
-            <rect x="18" y="10" width="7" height="2" rx="0.5" fill="#D4453A" opacity="0.25"/>
-            <line x1="1" y1="8" x2="29" y2="8" stroke="#A93226" stroke-width="0.5" opacity="0.3"/>
-            <circle cx="8" cy="5" r="0.5" fill="#B5352A" opacity="0.5"/>
-            <circle cx="20" cy="7" r="0.4" fill="#B5352A" opacity="0.4"/>
-            <circle cx="12" cy="12" r="0.5" fill="#B5352A" opacity="0.3"/>
-            <circle cx="25" cy="4" r="0.4" fill="#B5352A" opacity="0.4"/>
-            <line x1="3" y1="1.5" x2="20" y2="1.5" stroke="#E8675B" stroke-width="0.6" opacity="0.3" stroke-linecap="round"/>
-          </g>
+        <svg class="logo-svg" viewBox="0 0 48 32" width="48" height="32">
+          <rect x="2" y="12" width="40" height="18" rx="1.5" fill="#C0392B"/>
+          <rect x="2" y="27" width="40" height="3" rx="1" fill="#8E2B1E" opacity="0.5"/>
+          <polygon points="2,12 8,4 48,4 42,12" fill="#D4453A"/>
+          <polygon points="42,12 48,4 48,22 42,30" fill="#A93226"/>
+          <ellipse cx="16" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+          <ellipse cx="16" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+          <ellipse cx="25.5" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+          <ellipse cx="25.5" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+          <ellipse cx="35" cy="8.5" rx="4" ry="2.2" fill="#8E2B1E"/>
+          <ellipse cx="35" cy="8" rx="4" ry="2.2" fill="#7A2318" opacity="0.7"/>
+          <rect x="5" y="15" width="8" height="3" rx="0.5" fill="#D4453A" opacity="0.25"/>
+          <rect x="18" y="17" width="6" height="2" rx="0.5" fill="#D4453A" opacity="0.2"/>
+          <rect x="30" y="14" width="7" height="2.5" rx="0.5" fill="#D4453A" opacity="0.2"/>
         </svg>
         <span class="logo-text">RED BRICK HOUSE</span>
         <p data-i18n="footerSlogan">오래 남을 게임을 짓습니다.</p>
