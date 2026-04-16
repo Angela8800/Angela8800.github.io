@@ -396,44 +396,97 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.5px;
 }
 
-/* === HERO BRICK-BUILD ANIMATION === */
+/* === HERO BRICK-HOUSE ANIMATION === */
 .brick-build {
-  position: absolute; right: 48px; bottom: 60px;
-  width: 200px; height: 130px; z-index: 2;
+  position: absolute; right: 40px; bottom: 96px;
+  width: 220px; height: 176px; z-index: 2;
   pointer-events: none;
-  opacity: 0.9;
 }
 .brick-build-svg { width: 100%; height: 100%; overflow: visible; }
-.brick-build .brick {
-  fill: #c0392b;
-  stroke: #8b2a20; stroke-width: 0.5;
+
+/* Ground shadow */
+.brick-build .ground-shadow {
+  fill: rgba(0,0,0,0.25);
   opacity: 0;
-  transform: translateY(-40px);
-  animation: brick-drop 0.55s cubic-bezier(.35,1.7,.45,1) var(--d, 0s) forwards;
-  transform-box: fill-box;
-  transform-origin: center;
+  animation: shadow-appear 0.4s ease-out 0s forwards;
 }
-.brick-build .brick-roof { fill: #5d3a2a; stroke: #3c241a; }
-.brick-build .brick-chimney { fill: #8b2a20; stroke: #5a1810; }
-.brick-build .smoke circle {
-  fill: rgba(255,255,255,0.4);
+
+/* Bricks */
+.brick-build .brick {
+  fill: #c0392b; stroke: #faf0ed; stroke-width: 0.7;
   opacity: 0;
+  transform-box: fill-box; transform-origin: center;
+  animation: brick-drop 0.5s cubic-bezier(.35,1.7,.45,1) var(--d, 0s) forwards;
+}
+
+/* Features that appear (fade + scale in) */
+.brick-build .feature {
+  opacity: 0;
+  transform-box: fill-box; transform-origin: center;
+  animation: feature-appear 0.4s ease-out var(--d, 0s) forwards;
+}
+.brick-build .brick-roof {
+  fill: #8b2a20; stroke: #5a1810; stroke-width: 1.2; stroke-linejoin: round;
+}
+.brick-build .brick-chimney {
+  fill: #8b2a20; stroke: #5a1810; stroke-width: 0.8;
+}
+
+/* Windows: warm lamp light */
+.brick-build .window {
+  fill: #ffd966; stroke: #5a1810; stroke-width: 1.2;
+}
+.brick-build .window-mullion {
+  stroke: #5a1810; stroke-width: 1; opacity: 0;
+  animation: feature-appear 0.4s ease-out var(--d, 0s) forwards;
+}
+
+/* Door */
+.brick-build .door {
+  fill: #5d3a2a; stroke: #3c241a; stroke-width: 1.2;
+}
+.brick-build .door-knob {
+  fill: #ffd966; opacity: 0;
+  animation: feature-appear 0.4s ease-out var(--d, 0s) forwards;
+}
+
+/* Chimney smoke */
+.brick-build .smoke circle {
+  fill: rgba(255,255,255,0.55);
+  opacity: 0;
+  transform-box: fill-box; transform-origin: center;
   animation: smoke-rise 3s ease-out var(--d, 0s) infinite;
 }
+
 @keyframes brick-drop {
-  0%   { opacity: 0; transform: translateY(-50px) rotate(-4deg); }
-  60%  { opacity: 1; transform: translateY(6px) rotate(0deg); }
+  0%   { opacity: 0; transform: translateY(-46px) rotate(-3deg); }
+  55%  { opacity: 1; transform: translateY(5px) rotate(0.5deg); }
   80%  { transform: translateY(-2px); }
   100% { opacity: 1; transform: translateY(0); }
 }
+@keyframes feature-appear {
+  0%   { opacity: 0; transform: scale(0.6); }
+  60%  { opacity: 1; transform: scale(1.06); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes shadow-appear {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
 @keyframes smoke-rise {
-  0%   { opacity: 0; transform: translateY(0) scale(0.6); }
-  30%  { opacity: 0.7; }
-  100% { opacity: 0; transform: translateY(-28px) scale(1.4); }
+  0%   { opacity: 0; transform: translateY(4px) scale(0.5); }
+  25%  { opacity: 0.7; }
+  100% { opacity: 0; transform: translateY(-34px) scale(1.6); }
 }
 @media (prefers-reduced-motion: reduce) {
   .brick-build .brick,
-  .brick-build .smoke circle { animation: none; opacity: 1; transform: none; }
+  .brick-build .feature,
+  .brick-build .window-mullion,
+  .brick-build .door-knob,
+  .brick-build .ground-shadow,
+  .brick-build .smoke circle {
+    animation: none; opacity: 1; transform: none;
+  }
 }
 
 /* === CRITERIA (compact chips) === */
@@ -468,20 +521,21 @@ img { max-width: 100%; display: block; }
 /* === RESPONSIVE for revised sections === */
 @media (max-width: 1024px) {
   .criteria-chips { grid-template-columns: repeat(2, 1fr); }
-  .brick-build { right: 24px; bottom: 80px; width: 150px; height: 100px; }
+  .brick-build { right: 24px; bottom: 96px; width: 180px; height: 144px; }
 }
 @media (max-width: 768px) {
   .hero-tagline { font-size: 15px; margin: -8px 0 24px; }
   .criteria-chips { grid-template-columns: 1fr; gap: 14px; }
   .crit-chip { padding: 22px 20px; }
   .brick-build {
-    position: relative; right: auto; bottom: auto;
-    margin: 24px auto 0; width: 160px; height: 110px;
-    display: block;
+    right: auto; left: 50%; transform: translateX(-50%);
+    bottom: 80px; width: 140px; height: 112px;
+    opacity: 0.9;
   }
 }
 @media (max-width: 480px) {
   .nav-links { gap: 0; }
+  .brick-build { display: none; }
 }
 
 /* Touch-friendly: ensure tap targets are at least 44px */
