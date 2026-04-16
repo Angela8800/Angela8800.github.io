@@ -35,23 +35,9 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "RED BRICK HOUSE",
-  "alternateName": "RED BRICK HOUSE Games",
   "url": "https://angela8800.github.io/",
-  "logo": "https://angela8800.github.io/img/og-image.svg",
-  "description": "Indie game publishing built on solid foundations. We back developers with capital, production support, and long-term publishing.",
-  "foundingDate": "2026",
-  "industry": "Video Game Publishing",
-  "sameAs": [
-    "https://discord.gg/example",
-    "https://twitter.com/example",
-    "https://www.linkedin.com/company/example"
-  ],
-  "areaServed": ["Worldwide", "South Korea", "China", "Europe"],
-  "availableLanguage": ["English", "Korean", "Chinese"],
-  "contactPoint": [
-    {"@type": "ContactPoint", "contactType": "publishing", "email": "publishing@redbrickhouse.games", "availableLanguage": ["English", "Korean", "Chinese"]},
-    {"@type": "ContactPoint", "contactType": "press", "email": "press@redbrickhouse.games"}
-  ]
+  "description": "Indie game publishing built on solid foundations.",
+  "availableLanguage": ["English", "Korean", "Chinese"]
 }
 </script>
 </head>
@@ -76,8 +62,6 @@
       <a href="#services" data-i18n="navServices">서비스</a>
       <a href="#criteria" data-i18n="navCriteria">기준</a>
       <a href="#portfolio" data-i18n="navPortfolio">포트폴리오</a>
-      <a href="#insights" data-i18n="navInsights">인사이트</a>
-      <a href="#events" data-i18n="navEvents">일정</a>
       <a href="#team" data-i18n="navTeam">팀</a>
       <a href="#contact" class="nav-cta" data-i18n="navContact">문의</a>
     </div>
@@ -107,6 +91,41 @@
       <a href="#contact" class="btn btn-primary" data-i18n="heroBtn1">게임 제출하기</a>
       <a href="#about" class="btn btn-ghost" data-i18n="heroBtn2">우리의 이야기</a>
     </div>
+  </div>
+  <div class="brick-build" aria-hidden="true">
+    <svg viewBox="0 0 260 170" class="brick-build-svg">
+      <g class="brick-row row-1">
+        <rect class="brick" x="10"  y="140" width="48" height="22" rx="2" style="--d:0.0s"/>
+        <rect class="brick" x="62"  y="140" width="48" height="22" rx="2" style="--d:0.08s"/>
+        <rect class="brick" x="114" y="140" width="48" height="22" rx="2" style="--d:0.16s"/>
+        <rect class="brick" x="166" y="140" width="48" height="22" rx="2" style="--d:0.24s"/>
+        <rect class="brick" x="218" y="140" width="32" height="22" rx="2" style="--d:0.32s"/>
+      </g>
+      <g class="brick-row row-2">
+        <rect class="brick" x="36"  y="114" width="48" height="22" rx="2" style="--d:0.50s"/>
+        <rect class="brick" x="88"  y="114" width="48" height="22" rx="2" style="--d:0.58s"/>
+        <rect class="brick" x="140" y="114" width="48" height="22" rx="2" style="--d:0.66s"/>
+        <rect class="brick" x="192" y="114" width="48" height="22" rx="2" style="--d:0.74s"/>
+      </g>
+      <g class="brick-row row-3">
+        <rect class="brick" x="62"  y="88"  width="48" height="22" rx="2" style="--d:0.92s"/>
+        <rect class="brick" x="114" y="88"  width="48" height="22" rx="2" style="--d:1.00s"/>
+        <rect class="brick" x="166" y="88"  width="48" height="22" rx="2" style="--d:1.08s"/>
+      </g>
+      <g class="brick-row row-4">
+        <rect class="brick" x="88"  y="62"  width="48" height="22" rx="2" style="--d:1.26s"/>
+        <rect class="brick" x="140" y="62"  width="48" height="22" rx="2" style="--d:1.34s"/>
+      </g>
+      <g class="brick-row row-roof">
+        <polygon class="brick brick-roof" points="90,62 186,62 138,30" style="--d:1.55s"/>
+        <rect class="brick brick-chimney" x="158" y="36" width="12" height="22" rx="1" style="--d:1.70s"/>
+      </g>
+      <g class="smoke">
+        <circle cx="164" cy="32" r="4" style="--d:2.0s"/>
+        <circle cx="168" cy="22" r="5" style="--d:2.3s"/>
+        <circle cx="172" cy="10" r="6" style="--d:2.6s"/>
+      </g>
+    </svg>
   </div>
   <div class="hero-scroll">
     <span data-i18n="heroScroll">스크롤</span>
@@ -239,39 +258,23 @@
     <div class="section-label" data-i18n="critLabel">우리가 찾는 게임</div>
     <h2 class="section-title" data-i18n="critTitle">투자 기준</h2>
     <p class="section-sub" data-i18n="critSub"></p>
-    <div class="criteria-grid">
-      <div class="criteria-card">
-        <span class="crit-tag" data-i18n="crit1Tag">개발 단계</span>
-        <h3 data-i18n="crit1Title"></h3>
-        <p class="crit-desc" data-i18n="crit1Desc"></p>
-        <p class="crit-detail" data-i18n="crit1Detail"></p>
+    <div class="criteria-chips">
+      <div class="crit-chip">
+        <span class="crit-tag" data-i18n="crit1Tag">STAGE</span>
+        <p data-i18n="crit1Desc"></p>
       </div>
-      <div class="criteria-card">
-        <span class="crit-tag" data-i18n="crit2Tag">티켓 사이즈</span>
-        <h3 data-i18n="crit2Title"></h3>
-        <p class="crit-desc" data-i18n="crit2Desc"></p>
-        <p class="crit-detail" data-i18n="crit2Detail"></p>
+      <div class="crit-chip">
+        <span class="crit-tag" data-i18n="crit2Tag">CAPITAL</span>
+        <p data-i18n="crit2Desc"></p>
       </div>
-      <div class="criteria-card">
-        <span class="crit-tag" data-i18n="crit3Tag">장르</span>
-        <h3 data-i18n="crit3Title"></h3>
-        <p class="crit-desc" data-i18n="crit3Desc"></p>
-        <p class="crit-detail" data-i18n="crit3Detail"></p>
+      <div class="crit-chip">
+        <span class="crit-tag" data-i18n="crit3Tag">GENRE</span>
+        <p data-i18n="crit3Desc"></p>
       </div>
-      <div class="criteria-card">
-        <span class="crit-tag" data-i18n="crit4Tag">지역</span>
-        <h3 data-i18n="crit4Title"></h3>
-        <p class="crit-desc" data-i18n="crit4Desc"></p>
-        <p class="crit-detail" data-i18n="crit4Detail"></p>
+      <div class="crit-chip">
+        <span class="crit-tag" data-i18n="crit4Tag">REGION</span>
+        <p data-i18n="crit4Desc"></p>
       </div>
-    </div>
-    <div class="criteria-promise">
-      <span class="promise-label" data-i18n="critPromiseLabel">우리의 약속</span>
-      <ul class="promise-list">
-        <li data-i18n="critPromise1"></li>
-        <li data-i18n="critPromise2"></li>
-        <li data-i18n="critPromise3"></li>
-      </ul>
     </div>
   </div>
 </section>
@@ -347,96 +350,6 @@
   </div>
 </section>
 
-<!-- Insights -->
-<section class="section section-insights" id="insights">
-  <div class="container">
-    <div class="section-label" data-i18n="insightsLabel">서재</div>
-    <h2 class="section-title" data-i18n="insightsTitle">개발자를 위한 기록</h2>
-    <p class="section-sub" data-i18n="insightsSub"></p>
-    <div class="insights-grid">
-      <article class="insight-card">
-        <div class="insight-meta">
-          <span class="insight-tag" data-i18n="insight1Tag">마켓</span>
-          <span class="insight-date" data-i18n="insight1Date"></span>
-        </div>
-        <h3 data-i18n="insight1Title"></h3>
-        <p data-i18n="insight1Excerpt"></p>
-        <span class="insight-author" data-i18n="insight1Author"></span>
-      </article>
-      <article class="insight-card">
-        <div class="insight-meta">
-          <span class="insight-tag" data-i18n="insight2Tag">딜 가이드</span>
-          <span class="insight-date" data-i18n="insight2Date"></span>
-        </div>
-        <h3 data-i18n="insight2Title"></h3>
-        <p data-i18n="insight2Excerpt"></p>
-        <span class="insight-author" data-i18n="insight2Author"></span>
-      </article>
-      <article class="insight-card">
-        <div class="insight-meta">
-          <span class="insight-tag" data-i18n="insight3Tag">론칭</span>
-          <span class="insight-date" data-i18n="insight3Date"></span>
-        </div>
-        <h3 data-i18n="insight3Title"></h3>
-        <p data-i18n="insight3Excerpt"></p>
-        <span class="insight-author" data-i18n="insight3Author"></span>
-      </article>
-    </div>
-    <div class="insights-more">
-      <a href="#" class="btn btn-ghost-dark" data-i18n="insightsMore">인사이트 전체 보기</a>
-    </div>
-  </div>
-</section>
-
-<!-- Events -->
-<section class="section section-events" id="events">
-  <div class="container">
-    <div class="section-label" data-i18n="eventsLabel">길 위에서</div>
-    <h2 class="section-title" data-i18n="eventsTitle">이곳에서 만납니다</h2>
-    <p class="section-sub" data-i18n="eventsSub"></p>
-    <ul class="events-list">
-      <li class="event-row">
-        <span class="event-date" data-i18n="event1Date"></span>
-        <span class="event-city" data-i18n="event1City"></span>
-        <span class="event-name" data-i18n="event1Name"></span>
-        <span class="event-type" data-i18n="event1Type"></span>
-        <span class="event-note" data-i18n="event1Note"></span>
-      </li>
-      <li class="event-row">
-        <span class="event-date" data-i18n="event2Date"></span>
-        <span class="event-city" data-i18n="event2City"></span>
-        <span class="event-name" data-i18n="event2Name"></span>
-        <span class="event-type" data-i18n="event2Type"></span>
-        <span class="event-note" data-i18n="event2Note"></span>
-      </li>
-      <li class="event-row">
-        <span class="event-date" data-i18n="event3Date"></span>
-        <span class="event-city" data-i18n="event3City"></span>
-        <span class="event-name" data-i18n="event3Name"></span>
-        <span class="event-type" data-i18n="event3Type"></span>
-        <span class="event-note" data-i18n="event3Note"></span>
-      </li>
-      <li class="event-row">
-        <span class="event-date" data-i18n="event4Date"></span>
-        <span class="event-city" data-i18n="event4City"></span>
-        <span class="event-name" data-i18n="event4Name"></span>
-        <span class="event-type" data-i18n="event4Type"></span>
-        <span class="event-note" data-i18n="event4Note"></span>
-      </li>
-      <li class="event-row">
-        <span class="event-date" data-i18n="event5Date"></span>
-        <span class="event-city" data-i18n="event5City"></span>
-        <span class="event-name" data-i18n="event5Name"></span>
-        <span class="event-type" data-i18n="event5Type"></span>
-        <span class="event-note" data-i18n="event5Note"></span>
-      </li>
-    </ul>
-    <div class="events-cta">
-      <a href="#contact" class="btn btn-primary" data-i18n="eventsBook">미팅 요청하기</a>
-    </div>
-  </div>
-</section>
-
 <!-- Team -->
 <section class="section section-dark" id="team">
   <div class="container">
@@ -480,24 +393,6 @@
   </div>
 </section>
 
-<!-- Newsletter -->
-<section class="section section-newsletter" id="newsletter">
-  <div class="container">
-    <div class="newsletter-box">
-      <div class="newsletter-text">
-        <div class="section-label" data-i18n="newsLabel">우편함</div>
-        <h2 data-i18n="newsTitle">분기마다 인사이트를 메일로 보내드립니다.</h2>
-        <p data-i18n="newsSub"></p>
-      </div>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Sample form — not connected yet.');">
-        <input type="email" required data-i18n-ph="newsPlaceholder" placeholder="you@studio.com">
-        <button type="submit" class="btn btn-primary" data-i18n="newsBtn">구독</button>
-      </form>
-      <p class="newsletter-note" data-i18n="newsNote"></p>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="section section-cta">
   <div class="container">
@@ -515,151 +410,38 @@
     <div class="contact-grid">
       <div class="contact-info">
         <p data-i18n="contactDesc"></p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <strong data-i18n="contactEmail">이메일</strong>
-            <span>hello@redbrickhouse.games</span>
-          </div>
-          <div class="contact-item">
-            <strong data-i18n="contactBiz">비즈니스</strong>
-            <span>publishing@redbrickhouse.games</span>
-          </div>
-          <div class="contact-item">
-            <strong data-i18n="contactPress">언론</strong>
-            <span>press@redbrickhouse.games</span>
-          </div>
-          <div class="contact-item">
-            <strong data-i18n="contactLoc">위치</strong>
-            <span data-i18n="contactLocVal">대한민국 서울 / 글로벌</span>
-          </div>
-        </div>
-        <div class="social-links">
-          <a href="#">Twitter/X</a>
-          <a href="#">Discord</a>
-          <a href="#">YouTube</a>
-          <a href="#">LinkedIn</a>
-        </div>
       </div>
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <fieldset class="form-section">
-          <legend data-i18n="formSectionDev">개발자 정보</legend>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name" data-i18n="formName">이름</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email" data-i18n="formEmail">이메일</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="company" data-i18n="formCompany">스튜디오 / 회사명</label>
-              <input type="text" id="company" name="company">
-            </div>
-            <div class="form-group">
-              <label for="teamSize" data-i18n="formTeamSize">팀 규모</label>
-              <select id="teamSize" name="teamSize">
-                <option value="" data-i18n="formTeamOpt0">팀 규모 선택</option>
-                <option value="solo" data-i18n="formTeamOpt1">1인 개발자</option>
-                <option value="2-5" data-i18n="formTeamOpt2">2 - 5명</option>
-                <option value="6-15" data-i18n="formTeamOpt3">6 - 15명</option>
-                <option value="16+" data-i18n="formTeamOpt4">16명 이상</option>
-              </select>
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="form-section">
-          <legend data-i18n="formSectionGame">게임 정보</legend>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="gameTitle" data-i18n="formGame">게임 타이틀</label>
-              <input type="text" id="gameTitle" name="gameTitle" data-i18n-ph="formGamePh" placeholder="가제도 괜찮습니다">
-            </div>
-            <div class="form-group">
-              <label for="genre" data-i18n="formGenre">장르</label>
-              <input type="text" id="genre" name="genre" data-i18n-ph="formGenrePh" placeholder="예) 액션 로그라이크, 코지 심">
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="engine" data-i18n="formEngine">엔진</label>
-              <select id="engine" name="engine">
-                <option value="" data-i18n="formEngineOpt0">엔진 선택</option>
-                <option value="unity" data-i18n="formEngineOpt1">Unity</option>
-                <option value="unreal" data-i18n="formEngineOpt2">Unreal</option>
-                <option value="godot" data-i18n="formEngineOpt3">Godot</option>
-                <option value="other" data-i18n="formEngineOpt4">기타 / 자체엔진</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="stage" data-i18n="formStage">개발 단계</label>
-              <select id="stage" name="stage">
-                <option value="" data-i18n="formStageOpt0">단계 선택</option>
-                <option value="concept" data-i18n="formStageOpt1">컨셉 / 피치덱</option>
-                <option value="prototype" data-i18n="formStageOpt2">프로토타입 / 수직 슬라이스</option>
-                <option value="alpha" data-i18n="formStageOpt3">알파 / 베타</option>
-                <option value="prelaunch" data-i18n="formStageOpt4">출시 직전</option>
-              </select>
-            </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="formName">이름</label>
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="form-group">
-            <label data-i18n="formPlatform">출시 플랫폼 (복수 선택 가능)</label>
-            <div class="checkbox-row">
-              <label class="checkbox-chip"><input type="checkbox" name="platform" value="pc"><span data-i18n="formPlatformPc">PC / Steam</span></label>
-              <label class="checkbox-chip"><input type="checkbox" name="platform" value="console"><span data-i18n="formPlatformConsole">콘솔</span></label>
-              <label class="checkbox-chip"><input type="checkbox" name="platform" value="mobile"><span data-i18n="formPlatformMobile">모바일</span></label>
-              <label class="checkbox-chip"><input type="checkbox" name="platform" value="vr"><span data-i18n="formPlatformVr">VR / XR</span></label>
-            </div>
+            <label for="email" data-i18n="formEmail">이메일</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="gameTitle" data-i18n="formGame">게임 타이틀</label>
+            <input type="text" id="gameTitle" name="gameTitle" data-i18n-ph="formGamePh" placeholder="가제도 괜찮습니다">
           </div>
           <div class="form-group">
-            <label for="launch" data-i18n="formLaunch">예상 출시 시기</label>
-            <input type="text" id="launch" name="launch" data-i18n-ph="formLaunchPh" placeholder="예) 2026년 3분기">
+            <label for="stage" data-i18n="formStage">개발 단계</label>
+            <select id="stage" name="stage">
+              <option value="" data-i18n="formStageOpt0">단계 선택</option>
+              <option value="concept" data-i18n="formStageOpt1">컨셉 / 피치덱</option>
+              <option value="prototype" data-i18n="formStageOpt2">프로토타입 / 수직 슬라이스</option>
+              <option value="alpha" data-i18n="formStageOpt3">알파 / 베타</option>
+              <option value="prelaunch" data-i18n="formStageOpt4">출시 직전</option>
+            </select>
           </div>
-        </fieldset>
-        <fieldset class="form-section">
-          <legend data-i18n="formSectionPitch">피치 상세</legend>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="subject" data-i18n="formSubject">문의 유형</label>
-              <select id="subject" name="subject">
-                <option value="" data-i18n="formOpt1">주제를 선택하세요</option>
-                <option value="publishing" data-i18n="formOpt2">게임 퍼블리싱</option>
-                <option value="funding" data-i18n="formOpt3">펀딩 / 투자</option>
-                <option value="press" data-i18n="formOpt4">언론 / 미디어</option>
-                <option value="other" data-i18n="formOpt5">기타</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="funding" data-i18n="formFunding">필요 자금</label>
-              <select id="funding" name="funding">
-                <option value="" data-i18n="formFundingOpt0">범위 선택</option>
-                <option value="unsure" data-i18n="formFundingOpt1">아직 미정</option>
-                <option value="u50k" data-i18n="formFundingOpt2">USD 5만 미만</option>
-                <option value="50-150k" data-i18n="formFundingOpt3">USD 5만 - 15만</option>
-                <option value="150-500k" data-i18n="formFundingOpt4">USD 15만 - 50만</option>
-                <option value="o500k" data-i18n="formFundingOpt5">USD 50만 이상</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="buildUrl" data-i18n="formBuildUrl">플레이 빌드 URL (Steam 키, itch.io, Drive 등)</label>
-            <input type="url" id="buildUrl" name="buildUrl" data-i18n-ph="formBuildUrlPh" placeholder="https://...">
-          </div>
-          <div class="form-group">
-            <label for="trailerUrl" data-i18n="formTrailerUrl">트레일러 URL (YouTube / Bilibili)</label>
-            <input type="url" id="trailerUrl" name="trailerUrl" data-i18n-ph="formTrailerUrlPh" placeholder="https://...">
-          </div>
-          <div class="form-group">
-            <label for="message" data-i18n="formMsg">추가로 알려주실 내용이 있나요?</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-          </div>
-          <label class="nda-check">
-            <input type="checkbox" name="nda" value="yes">
-            <span data-i18n="formNdaLabel">검토 전 NDA 서명을 원합니다.</span>
-          </label>
-        </fieldset>
+        </div>
+        <div class="form-group">
+          <label for="message" data-i18n="formMsg">게임에 대해 알려주세요</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
         <button type="submit" class="btn btn-primary" data-i18n="formBtn">피치 보내기</button>
         <p class="form-sample-note" data-i18n="formSampleNote">샘플 폼 &mdash; 제출 내용은 아직 수집되지 않습니다.</p>
       </form>
@@ -683,26 +465,11 @@
         <span class="logo-text">RED BRICK HOUSE</span>
         <p data-i18n="footerSlogan">오래 남을 게임을 짓습니다.</p>
       </div>
-      <div class="footer-community">
-        <span class="footer-community-label" data-i18n="footerCommunity">커뮤니티</span>
-        <p class="footer-community-desc" data-i18n="footerCommunityDesc"></p>
-        <div class="footer-community-links">
-          <a href="#" data-i18n="communityDiscord">Discord</a>
-          <a href="#" data-i18n="communityWechat">WeChat</a>
-          <a href="#" data-i18n="communityBilibili">Bilibili</a>
-          <a href="#" data-i18n="communityTwitter">Twitter / X</a>
-          <a href="#" data-i18n="communityYoutube">YouTube</a>
-          <a href="#" data-i18n="communityLinkedin">LinkedIn</a>
-          <a href="#" data-i18n="communityKakao">카카오톡</a>
-        </div>
-      </div>
       <div class="footer-links">
         <a href="#about" data-i18n="navAbout">소개</a>
         <a href="#services" data-i18n="navServices">서비스</a>
         <a href="#criteria" data-i18n="navCriteria">기준</a>
         <a href="#portfolio" data-i18n="portLabel">우리의 게임</a>
-        <a href="#insights" data-i18n="navInsights">인사이트</a>
-        <a href="#events" data-i18n="navEvents">일정</a>
         <a href="#contact" data-i18n="contactLabel">문의하기</a>
         <a href="#" data-i18n="footerPrivacy">개인정보처리방침</a>
       </div>
