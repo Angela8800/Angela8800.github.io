@@ -529,13 +529,16 @@ img { max-width: 100%; display: block; }
   .crit-chip { padding: 22px 20px; }
   .brick-build {
     right: auto; left: 50%; transform: translateX(-50%);
-    bottom: 80px; width: 140px; height: 112px;
-    opacity: 0.9;
+    bottom: 48px; width: 110px; height: 88px;
+    opacity: 0.45;
   }
 }
 @media (max-width: 480px) {
   .nav-links { gap: 0; }
-  .brick-build { display: none; }
+  .brick-build {
+    bottom: 44px; width: 90px; height: 72px;
+    opacity: 0.35;
+  }
 }
 
 /* Touch-friendly: ensure tap targets are at least 44px */
