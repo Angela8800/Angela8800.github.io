@@ -205,6 +205,7 @@ html:lang(ko) { word-break: keep-all; }
 }
 .portfolio-item.featured { grid-column: 1 / -1; }
 .portfolio-item.featured .portfolio-thumb { padding-bottom: 38.4%; }
+.portfolio-item.pcard .portfolio-thumb { padding-bottom: 46.74%; }
 .portfolio-thumb {
   position: relative; overflow: hidden;
   padding-bottom: 56.25%;
@@ -385,6 +386,7 @@ html:lang(ko) { word-break: keep-all; }
   .portfolio-grid { grid-template-columns: 1fr; gap: 16px; }
   .portfolio-item.large { grid-column: span 1; }
   .portfolio-thumb, .portfolio-item.large .portfolio-thumb { padding-bottom: 65%; }
+  .portfolio-item.pcard .portfolio-thumb { padding-bottom: 46.74%; }
 
   .btn-large { padding: 16px 36px; font-size: 15px; }
 
