@@ -29,7 +29,7 @@
 <meta content="https://redbrickhouse.gg/img/og-image.png?v=20260906" name="twitter:image"/>
 <link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
-<link href="/style.css?v=20260907-1" rel="stylesheet"/>
+<link href="/style.css?v=20260907-2" rel="stylesheet"/>
 <script>
 (function () {
   var m = '/img/hero-bic2026.mp4?v=20260902-5', w = '/img/hero-bic2026.webm?v=20260902-5';
@@ -217,7 +217,7 @@
 <div class="portfolio-item featured">
 <div class="portfolio-thumb">
 <a href="https://store.steampowered.com/app/3438920/" rel="noopener" target="_blank">
-<img alt="VOID DIVER" class="port-img" src="/img/void-diver.jpg"/>
+<img alt="VOID DIVER" class="port-img" src="/img/void-diver-capsule.jpg"/>
 </a>
 </div>
 <div class="pcard-body">
@@ -285,6 +285,19 @@
 </div>
 </div>
 </div>
+<script>
+    (function () {
+      var grid = document.querySelector('.portfolio-grid');
+      if (!grid) return;
+      var items = Array.prototype.slice.call(grid.querySelectorAll('.portfolio-item'));
+      if (items.length < 2) return;
+      var pick = items[Math.floor(Math.random() * items.length)];
+      items.forEach(function (el) { el.classList.remove('featured'); el.classList.add('pcard'); });
+      pick.classList.remove('pcard');
+      pick.classList.add('featured');
+      grid.insertBefore(pick, grid.firstChild);
+    })();
+    </script>
 </div>
 </section>
 <!-- News -->

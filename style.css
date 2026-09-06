@@ -198,18 +198,23 @@ html:lang(ko) { word-break: keep-all; }
 }
 
 /* === PORTFOLIO === */
-.portfolio-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .portfolio-item {
   background: #fff; border-radius: 14px; overflow: hidden;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  display: flex; flex-direction: column;
 }
 .portfolio-item.featured { grid-column: 1 / -1; }
-.portfolio-item.featured .portfolio-thumb { padding-bottom: 38.4%; }
-.portfolio-item.pcard .portfolio-thumb { padding-bottom: 46.74%; }
+/* All game art is cut to the Steam header capsule ratio (920x430) */
 .portfolio-thumb {
   position: relative; overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 46.74%;
 }
+.portfolio-item.pcard .pcard-body { padding: 18px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+.portfolio-item.pcard .pcard-head { flex-direction: column; align-items: flex-start; gap: 10px; }
+.portfolio-item.pcard .pcard-body h3 { font-size: 18px; }
+.portfolio-item.pcard .pcard-stats { display: none; }
+.portfolio-item.pcard .pcard-tags { margin-top: auto; padding-top: 12px; }
 .port-img {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
 }
@@ -385,8 +390,8 @@ html:lang(ko) { word-break: keep-all; }
   /* Portfolio mobile */
   .portfolio-grid { grid-template-columns: 1fr; gap: 16px; }
   .portfolio-item.large { grid-column: span 1; }
-  .portfolio-thumb, .portfolio-item.large .portfolio-thumb { padding-bottom: 65%; }
-  .portfolio-item.pcard .portfolio-thumb { padding-bottom: 46.74%; }
+  .portfolio-item.pcard .pcard-body { padding: 20px 22px 22px; }
+  .portfolio-item.pcard .pcard-body h3 { font-size: 20px; }
 
   .btn-large { padding: 16px 36px; font-size: 15px; }
 
