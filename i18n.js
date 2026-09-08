@@ -57,7 +57,12 @@ const translations = {
     modalSuccess: "Your message has been sent. We'll get back to you soon.",
     modalFail: "Something went wrong. Please email contact@redbrickhouse.gg directly.",
     modalRequired: "Please fill in the required fields.",
-    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved."
+    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved.",
+    pCapPub: "Publisher · RED&nbsp;BRICK&nbsp;HOUSE",
+    pCapVd: "Developer · Nemo Studio · LoadComplete",
+    pCapCove: "Developer · THECOVE",
+    pCapAshbone: "Developer · Ashbone Games",
+    pCapKotge: "Developer · Kotge Astroworks"
   },
   ko: {
     docTitle: "레드브릭하우스 RED BRICK HOUSE - 인디게임 퍼블리셔",
@@ -117,7 +122,12 @@ const translations = {
     modalSuccess: "문의가 접수되었습니다. 빠르게 답변드리겠습니다.",
     modalFail: "전송에 실패했습니다. contact@redbrickhouse.gg로 직접 메일 주세요.",
     modalRequired: "필수 항목을 입력해주세요.",
-    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved."
+    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved.",
+    pCapPub: "퍼블리셔 · 레드브릭하우스",
+    pCapVd: "개발사 · Nemo Studio · LoadComplete",
+    pCapCove: "개발사 · THECOVE",
+    pCapAshbone: "개발사 · Ashbone Games",
+    pCapKotge: "개발사 · Kotge Astroworks"
   },
   zh: {
     docTitle: "RED BRICK HOUSE - 全球独立游戏发行商",
@@ -177,7 +187,12 @@ const translations = {
     modalSuccess: "您的信息已发送，我们会尽快回复。",
     modalFail: "发送失败，请直接发送邮件至 contact@redbrickhouse.gg。",
     modalRequired: "请填写必填项。",
-    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved."
+    footerCopy: "&copy; 2026 RED&nbsp;BRICK&nbsp;HOUSE. All rights reserved.",
+    pCapPub: "发行商 · RED&nbsp;BRICK&nbsp;HOUSE",
+    pCapVd: "开发商 · Nemo Studio · LoadComplete",
+    pCapCove: "开发商 · THECOVE",
+    pCapAshbone: "开发商 · Ashbone Games",
+    pCapKotge: "开发商 · Kotge Astroworks"
   }
 };
 
