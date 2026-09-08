@@ -29,7 +29,7 @@
 <meta content="https://redbrickhouse.gg/img/og-image.png?v=20260906" name="twitter:image"/>
 <link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
 <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
-<link href="/style.css?v=20260908-1" rel="stylesheet"/>
+<link href="/style.css?v=20260908-2" rel="stylesheet"/>
 <script>
 (function () {
   var m = '/img/hero-bic2026.mp4?v=20260902-5', w = '/img/hero-bic2026.webm?v=20260902-5';
@@ -291,11 +291,28 @@
       if (!grid) return;
       var items = Array.prototype.slice.call(grid.querySelectorAll('.portfolio-item'));
       if (items.length < 2) return;
-      var pick = items[Math.floor(Math.random() * items.length)];
-      items.forEach(function (el) { el.classList.remove('featured'); el.classList.add('pcard'); });
-      pick.classList.remove('pcard');
-      pick.classList.add('featured');
-      grid.insertBefore(pick, grid.firstChild);
+      var PERIOD = 10000; /* rotate every 10 seconds, synchronized to the clock for every visitor */
+      var current = -1;
+      function slot() { return Math.floor(Date.now() / PERIOD) % items.length; }
+      function feature(i) {
+        var pick = items[i];
+        items.forEach(function (el) { el.classList.remove('featured'); el.classList.add('pcard'); });
+        pick.classList.remove('pcard');
+        pick.classList.add('featured');
+        grid.insertBefore(pick, grid.firstChild);
+        current = i;
+      }
+      feature(slot());
+      function tick() {
+        var next = slot();
+        if (next !== current) {
+          grid.classList.add('is-rotating');
+          setTimeout(function () { feature(next); grid.classList.remove('is-rotating'); }, 260);
+        }
+        var wait = PERIOD - (Date.now() % PERIOD) + 20;
+        setTimeout(tick, wait);
+      }
+      setTimeout(tick, PERIOD - (Date.now() % PERIOD) + 20);
     })();
     </script>
 </div>
@@ -375,7 +392,7 @@
 <div class="contact-grid">
 <div class="contact-info">
 <h2 class="section-title" data-i18n="contactTitle">Tell Us Your Story</h2>
-<p data-i18n="contactDesc">Whether you're a solo developer with a prototype or a studio ready to launch, we want to hear from you.</p>
+<p data-i18n="contactDesc">Whether you're a solo developer with a prototype or a studio that has worked together for years, reach out anytime.</p>
 </div>
 <div class="contact-action">
 <button class="btn btn-primary btn-large" data-i18n="contactBtn" id="contactOpen" type="button">Contact Us</button>

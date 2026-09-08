@@ -199,6 +199,8 @@ html:lang(ko) { word-break: keep-all; }
 
 /* === PORTFOLIO === */
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.portfolio-grid { transition: opacity 0.26s ease; }
+.portfolio-grid.is-rotating { opacity: 0; }
 .portfolio-item {
   background: #fff; border-radius: 14px; overflow: hidden;
   box-shadow: 0 2px 16px rgba(0,0,0,0.07);
